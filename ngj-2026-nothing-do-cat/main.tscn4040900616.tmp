@@ -586,9 +586,6 @@ animations = [{
 "speed": 5.0
 }]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_h2yge"]
-size = Vector2(32, 32)
-
 [node name="Main" type="Node2D" unique_id=1020652070]
 
 [node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=1160355759]
@@ -597,14 +594,9 @@ tile_map_data = PackedByteArray("AAACABUAAAADAAsAAAADABUAAAAEAAsAAAAEABUAAAAFAAs
 tile_set = SubResource("TileSet_h2yge")
 
 [node name="Cat" type="Node2D" parent="." unique_id=1251811865]
-
-[node name="CharacterBody2D" type="CharacterBody2D" parent="Cat" unique_id=1576592764]
 script = ExtResource("2_h2yge")
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Cat/CharacterBody2D" unique_id=86667385]
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Cat" unique_id=86667385]
 position = Vector2(348, 312)
 scale = Vector2(0.05, 0.05)
 sprite_frames = SubResource("SpriteFrames_ig7tw")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Cat/CharacterBody2D" unique_id=1647014607]
-shape = SubResource("RectangleShape2D_h2yge")
