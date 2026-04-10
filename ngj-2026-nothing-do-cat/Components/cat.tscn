@@ -1,0 +1,31 @@
+[gd_scene format=3 uid="uid://jnj4nbybi3e"]
+
+[ext_resource type="Script" uid="uid://c4iaqlfu4ueya" path="res://CatController.gd" id="1_54klj"]
+[ext_resource type="Texture2D" uid="uid://uk85ue1fpgsu" path="res://Assets/Cat/Cat for game/Cat standstill.png" id="2_ng0wv"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ig7tw"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_ng0wv")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_h2yge"]
+size = Vector2(12, 11)
+
+[node name="Cat" type="Node2D" unique_id=1071178427]
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="." unique_id=304566032]
+script = ExtResource("1_54klj")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CharacterBody2D" unique_id=1537512417]
+sprite_frames = SubResource("SpriteFrames_ig7tw")
+frame_progress = 0.60082036
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D" unique_id=448345408]
+position = Vector2(1, 6.5)
+shape = SubResource("RectangleShape2D_h2yge")

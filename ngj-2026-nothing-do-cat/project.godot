@@ -20,8 +20,8 @@ Globals="*uid://05pljh1ygd1g"
 
 [display]
 
-window/size/viewport_width=480
-window/size/viewport_height=270
+window/size/viewport_width=320
+window/size/viewport_height=180
 window/size/mode=3
 window/stretch/mode="viewport"
 
@@ -54,3 +54,4 @@ jump={
 [rendering]
 
 rendering_device/driver.windows="d3d12"
+2d/snap/snap_2d_transforms_to_pixel=true
