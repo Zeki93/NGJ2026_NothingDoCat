@@ -13,7 +13,6 @@ config_version=5
 config/name="NGJ2026_NothingDoCat"
 run/main_scene="uid://db133tytxinf7"
 config/features=PackedStringArray("4.6", "Forward Plus")
-config/icon="res://Assets/icon.svg"
 
 [autoload]
 
