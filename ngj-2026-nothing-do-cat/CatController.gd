@@ -1,8 +1,8 @@
 extends CharacterBody2D
 
 
-var speed = 4;
-var jumpSpeed = 8;
+var speed = 2;
+var jumpSpeed = 7;
 
 func _ready() -> void:
 	pass
