@@ -1,7 +1,6 @@
 [gd_scene format=4 uid="uid://db133tytxinf7"]
 
 [ext_resource type="Texture2D" uid="uid://ryyepv34sgt5" path="res://Placeholders/Kings and Pigs/Sprites/14-TileSets/Terrain (32x32).png" id="1_ig7tw"]
-[ext_resource type="Texture2D" uid="uid://dpx35cbr6ml1d" path="res://Placeholders/cat_placeholder.webp" id="2_0xm2m"]
 [ext_resource type="Script" uid="uid://c4iaqlfu4ueya" path="res://CatController.gd" id="2_h2yge"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_0xm2m"]
@@ -576,15 +575,6 @@ physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_0xm2m")
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_ig7tw"]
-animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": ExtResource("2_0xm2m")
-}],
-"loop": true,
-"name": &"default",
-"speed": 5.0
-}]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_h2yge"]
 size = Vector2(32, 32)
