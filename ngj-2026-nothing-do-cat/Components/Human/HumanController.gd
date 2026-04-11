@@ -2,6 +2,7 @@ extends Node2D
 
 @onready var characterBody = $CharacterBody2D
 @onready var animated_sprite = $CharacterBody2D/AnimatedSprite2D
+@onready var emoji_sprite = $CharacterBody2D/Emoji
 @onready var interactables = $"../World/Interactables"
 
 enum states
@@ -9,6 +10,7 @@ enum states
 	IDLE = 0,
 	MOVING = 1,
 	WORKING = 2,
+	INTERRUPTED = 3
 }
 var state : states
 
@@ -39,6 +41,7 @@ func _ready() -> void:
 	characterBody.global_position.y = standingHeight;
 	Globals.humanPosition = characterBody.global_position
 	call_deferred("do_setup")
+	GlobalSignalBus.humanReactToCat.connect(_on_cat_interrupt)
 
 func _process(delta: float) -> void:
 	stateTime += delta;
@@ -77,7 +80,8 @@ func _process(delta: float) -> void:
 					#Moving Left
 					characterBody.velocity.x = -Globals.tileSize.x * speed;
 					animated_sprite.flip_h = false
-	
+		states.INTERRUPTED:
+			pass
 	characterBody.move_and_slide()
 	Globals.humanPosition = characterBody.global_position;
 
@@ -87,3 +91,11 @@ func getNextTargetPosition():
 	var newTarget = workTargets.pop_front();
 	if(newTarget != null):
 			target = newTarget;
+			
+func _on_cat_interrupt(item: interactable):
+	if(state != states.INTERRUPTED):
+		state = states.INTERRUPTED;
+		target = item;
+		EmotionController.showHumanEmoji(emoji_sprite, "INTERRUPTED");
+		Globals.human_interrupted_counter += 1;
+	pass

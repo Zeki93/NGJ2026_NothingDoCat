@@ -10,7 +10,7 @@ var cat_cooldown = 1;
 
 static var human_emote_playing = false;
 var human_timer = 0;
-var human_cooldown = 1;
+var human_cooldown = 2;
 
 
 func _ready() -> void:
