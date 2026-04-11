@@ -7,7 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://dt5nh2q0hhkpr" path="res://Components/Human/human.tscn" id="4_1bvp3"]
 [ext_resource type="Script" uid="uid://dxwj2xskxnldv" path="res://Components/EmotionSpeachBubble/EmotionController.gd" id="4_272bh"]
 [ext_resource type="Texture2D" uid="uid://bufh243hsvih7" path="res://Assets/Wallpaper/Wallpaper purple - Living room.png" id="6_1u8w0"]
-[ext_resource type="PackedScene" path="res://Components/Interactable/food_bowl___empty.tscn" id="10_a6jrf"]
+[ext_resource type="PackedScene" uid="uid://b8nu1r4p1cthx" path="res://Components/Interactable/food_bowl___empty.tscn" id="10_a6jrf"]
 [ext_resource type="PackedScene" uid="uid://bb1lionhhwrwx" path="res://Components/Furniture/kitchen_counter.tscn" id="11_efxa6"]
 [ext_resource type="PackedScene" uid="uid://csqsssic4pahg" path="res://Components/Interactable/Milk.tscn" id="12_dg77c"]
 [ext_resource type="PackedScene" uid="uid://bmlo15o2dyo80" path="res://Components/Interactable/vase.tscn" id="12_ycdy4"]
@@ -17,19 +17,18 @@
 [ext_resource type="PackedScene" uid="uid://bn766b40jdxxu" path="res://Components/Furniture/kitchen_wall_cabinets.tscn" id="13_ycdy4"]
 [ext_resource type="PackedScene" uid="uid://cdxip243sfhfw" path="res://Components/Furniture/kitchen_wall_cabinets_2.tscn" id="14_vivmo"]
 [ext_resource type="PackedScene" uid="uid://dg8cektx3fg1u" path="res://Components/Furniture/table.tscn" id="14_w48qg"]
-[ext_resource type="PackedScene" path="res://Components/Interactable/cardboard_box.tscn" id="15_0odxb"]
+[ext_resource type="PackedScene" uid="uid://clmacx84lm5se" path="res://Components/Interactable/cardboard_box.tscn" id="15_0odxb"]
 [ext_resource type="PackedScene" uid="uid://etmxitghs8pr" path="res://Components/Furniture/chair_left.tscn" id="15_vivmo"]
 [ext_resource type="PackedScene" uid="uid://br8kx6fpgf3jx" path="res://Components/Furniture/chair_left_2.tscn" id="16_2cqfq"]
-[ext_resource type="PackedScene" path="res://Components/Interactable/cardboard_box_2.tscn" id="16_lswn8"]
+[ext_resource type="PackedScene" uid="uid://qsjw68u5uvri" path="res://Components/Interactable/cardboard_box_2.tscn" id="16_lswn8"]
 [ext_resource type="PackedScene" uid="uid://clm7m8240p8vk" path="res://Components/Furniture/window_kitchen.tscn" id="17_yaehf"]
 [ext_resource type="PackedScene" uid="uid://b5d3i0ehvq42x" path="res://Components/Furniture/table_living_room.tscn" id="18_074og"]
 [ext_resource type="PackedScene" uid="uid://bbetfoe1qxrru" path="res://Components/Furniture/pc_case_2.tscn" id="20_82xsv"]
-[ext_resource type="PackedScene" uid="uid://bkqpokwsjqidf" path="res://Components/Furniture/pc_screen_off.tscn" id="21_getpj"]
 [ext_resource type="PackedScene" uid="uid://cwva2i1jqb4qw" path="res://Components/Furniture/window_1_living_room.tscn" id="22_ryguw"]
 [ext_resource type="PackedScene" uid="uid://dyt2ips2bay0y" path="res://Components/Furniture/window_2_living_room_2.tscn" id="23_d13ii"]
-[ext_resource type="PackedScene" path="res://Components/Furniture/window_3_living_room_3.tscn" id="28_kq58d"]
-[ext_resource type="PackedScene" path="res://Components/Furniture/couch.tscn" id="28_xuqvo"]
-[ext_resource type="PackedScene" path="res://single_sofa.tscn" id="29_qsp4k"]
+[ext_resource type="PackedScene" uid="uid://dls5eya6fh3e7" path="res://Components/Furniture/window_3_living_room_3.tscn" id="28_kq58d"]
+[ext_resource type="PackedScene" uid="uid://dyhcx8grgpbr0" path="res://Components/Furniture/couch.tscn" id="28_xuqvo"]
+[ext_resource type="PackedScene" uid="uid://cklu6y0yo3q7s" path="res://single_sofa.tscn" id="29_qsp4k"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_lquwl"]
 texture = ExtResource("1_ig7tw")
@@ -2246,6 +2245,12 @@ position = Vector2(364, 155)
 [node name="Cardboard box2" parent="World/Interactables" unique_id=660965004 instance=ExtResource("16_lswn8")]
 position = Vector2(39, 122)
 
+[node name="PC Screen ON" parent="World/Interactables" unique_id=676168176 instance=ExtResource("20_82xsv")]
+position = Vector2(415, 136)
+humanInteractable = true
+catTnteractable = true
+catMeowable = true
+
 [node name="Furniture" type="Node2D" parent="World" unique_id=358244518]
 position = Vector2(-248, 6)
 
@@ -2269,12 +2274,6 @@ scale = Vector2(1, 1)
 
 [node name="Table Living room" parent="World/Furniture" unique_id=1517342991 instance=ExtResource("18_074og")]
 position = Vector2(665, 150)
-
-[node name="PC Screen ON" parent="World/Furniture" unique_id=676168176 instance=ExtResource("20_82xsv")]
-position = Vector2(663, 130)
-
-[node name="PC Screen Off" parent="World/Furniture" unique_id=294308808 instance=ExtResource("21_getpj")]
-position = Vector2(663, 130)
 
 [node name="Window 1 Living room" parent="World/Furniture" unique_id=646484421 instance=ExtResource("22_ryguw")]
 z_index = 0
