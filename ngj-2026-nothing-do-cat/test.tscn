@@ -2048,6 +2048,7 @@ position = Vector2(50, 100)
 [node name="Human" parent="." unique_id=657312625 instance=ExtResource("4_g14j6")]
 z_index = 1
 position = Vector2(200, 144)
+workTargets = [NodePath("../World/Interactables/Milk"), null]
 
 [node name="EmojiController" type="Node2D" parent="." unique_id=1187962126]
 z_index = 2
@@ -2068,9 +2069,14 @@ tile_set = SubResource("TileSet_vxl6d")
 
 [node name="Milk" parent="World/Interactables" unique_id=1783850263 instance=ExtResource("7_0m0f1")]
 position = Vector2(92, 129)
+humanTnteractable = true
+catTnteractable = true
+human_interact_type = 1
 
 [node name="FoodBowl" parent="World/Interactables" unique_id=540496720 instance=ExtResource("8_b0q6j")]
 position = Vector2(152, 165)
+humanTnteractable = true
+catTnteractable = true
 
 [node name="Glass" parent="World/Interactables" unique_id=1251227551 instance=ExtResource("9_mhym6")]
 position = Vector2(101, 133)

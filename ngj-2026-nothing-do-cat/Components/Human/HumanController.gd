@@ -2,6 +2,7 @@ extends Node2D
 
 @onready var characterBody = $CharacterBody2D
 @onready var animated_sprite = $CharacterBody2D/AnimatedSprite2D
+@onready var interactables = $"../World/Interactables"
 
 enum states
 {
@@ -13,11 +14,12 @@ var state : states
 
 @export var speed = 1.5
 @export var offset = 2;
-@export var idleTime = 5;
+@export var idleTime = 15;
+@export var workTargets = [];
 
-@export var startPosition = 200
-@export var standingHeight = 144
-@export var walkingHeight = 146;
+var startPosition = 200
+var standingHeight = 144
+var walkingHeight = 146;
 
 var targetPosition: int;
 var placeholderTargets = []
@@ -25,6 +27,16 @@ var placeholderTargets = []
 var stateTime = 0;
 
 func _ready() -> void:
+	
+	for child in interactables.get_children():
+		print(child)
+		if(child is interactable):
+			print(child.interactRange)
+			pass
+		pass
+		
+	
+	
 	placeholderTargets.push_front(200)
 	placeholderTargets.push_front(400)
 	placeholderTargets.push_front(100)
