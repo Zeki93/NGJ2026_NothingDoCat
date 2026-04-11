@@ -2087,7 +2087,7 @@ position = Vector2(244, 156)
 position = Vector2(258, 156)
 
 [node name="Vase" parent="World/Interactables" unique_id=959860280 instance=ExtResource("12_ycdy4")]
-position = Vector2(420, 135)
+position = Vector2(242, 131)
 
 [node name="Furniture" type="Node2D" parent="World" unique_id=358244518]
 position = Vector2(-248, 6)
@@ -2100,5 +2100,5 @@ position = Vector2(353, 97.00001)
 scale = Vector2(1, 1.045)
 
 [node name="Chair left" parent="World/Furniture" unique_id=1092231263 instance=ExtResource("15_vivmo")]
-position = Vector2(457, 140)
+position = Vector2(453, 140)
 scale = Vector2(0.8, 0.7)
