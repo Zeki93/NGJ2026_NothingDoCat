@@ -27,6 +27,7 @@
 [ext_resource type="PackedScene" uid="uid://bkqpokwsjqidf" path="res://Components/Furniture/pc_screen_off.tscn" id="21_getpj"]
 [ext_resource type="PackedScene" uid="uid://cwva2i1jqb4qw" path="res://Components/Furniture/window_1_living_room.tscn" id="22_ryguw"]
 [ext_resource type="PackedScene" uid="uid://dyt2ips2bay0y" path="res://Components/Furniture/window_2_living_room_2.tscn" id="23_d13ii"]
+[ext_resource type="PackedScene" uid="uid://dls5eya6fh3e7" path="res://Components/Furniture/window_3_living_room_3.tscn" id="28_kq58d"]
 [ext_resource type="PackedScene" uid="uid://dyhcx8grgpbr0" path="res://Components/Furniture/couch.tscn" id="28_xuqvo"]
 [ext_resource type="PackedScene" uid="uid://cklu6y0yo3q7s" path="res://single_sofa.tscn" id="29_qsp4k"]
 
@@ -2282,6 +2283,9 @@ position = Vector2(753, 116)
 [node name="Window 2 Living room2" parent="World/Furniture" unique_id=987127013 instance=ExtResource("23_d13ii")]
 z_index = 0
 position = Vector2(834, 116)
+
+[node name="Window 3 Living room3" parent="World/Furniture" unique_id=809997669 instance=ExtResource("28_kq58d")]
+position = Vector2(608, 116)
 
 [node name="Couch" parent="World/Furniture" unique_id=1254645421 instance=ExtResource("28_xuqvo")]
 position = Vector2(753, 143)
