@@ -10,11 +10,15 @@
 [ext_resource type="PackedScene" uid="uid://csqsssic4pahg" path="res://Components/Interactable/Milk.tscn" id="12_dg77c"]
 [ext_resource type="PackedScene" uid="uid://bmlo15o2dyo80" path="res://Components/Interactable/vase.tscn" id="12_ycdy4"]
 [ext_resource type="PackedScene" uid="uid://cwem1gdk8nil6" path="res://Components/Interactable/food_bowl.tscn" id="13_2cqfq"]
+[ext_resource type="PackedScene" uid="uid://da6iw1f6x8de1" path="res://Components/Interactable/pc_case.tscn" id="13_cegan"]
 [ext_resource type="PackedScene" uid="uid://woh32ibdwhu6" path="res://Components/Interactable/glass.tscn" id="13_vivmo"]
 [ext_resource type="PackedScene" uid="uid://bn766b40jdxxu" path="res://Components/Furniture/kitchen_wall_cabinets.tscn" id="13_ycdy4"]
 [ext_resource type="PackedScene" uid="uid://cdxip243sfhfw" path="res://Components/Furniture/kitchen_wall_cabinets_2.tscn" id="14_vivmo"]
 [ext_resource type="PackedScene" uid="uid://dg8cektx3fg1u" path="res://Components/Furniture/table.tscn" id="14_w48qg"]
 [ext_resource type="PackedScene" uid="uid://etmxitghs8pr" path="res://Components/Furniture/chair_left.tscn" id="15_vivmo"]
+[ext_resource type="PackedScene" uid="uid://br8kx6fpgf3jx" path="res://Components/Furniture/chair_left_2.tscn" id="16_2cqfq"]
+[ext_resource type="PackedScene" uid="uid://clm7m8240p8vk" path="res://Components/Furniture/window_kitchen.tscn" id="17_yaehf"]
+[ext_resource type="PackedScene" uid="uid://b5d3i0ehvq42x" path="res://Components/Furniture/table_living_room.tscn" id="18_074og"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_lquwl"]
 texture = ExtResource("1_ig7tw")
@@ -2045,13 +2049,13 @@ sources/1 = SubResource("TileSetAtlasSource_7mycd")
 [node name="Main" type="Node2D" unique_id=1020652070]
 
 [node name="Cat" parent="." unique_id=1071178427 instance=ExtResource("2_0xm2m")]
-z_index = 2
+z_index = 5
 position = Vector2(50, 100)
 
 [node name="Camera2D" parent="." unique_id=352530552 instance=ExtResource("2_272bh")]
 
 [node name="Human" parent="." unique_id=657312625 instance=ExtResource("4_1bvp3")]
-z_index = 1
+z_index = 5
 position = Vector2(200, 144)
 
 [node name="EmojiController" type="Node2D" parent="." unique_id=1581215847]
@@ -2081,13 +2085,19 @@ position = Vector2(159, 164)
 position = Vector2(101, 133)
 
 [node name="Table" parent="World/Interactables" unique_id=2015739529 instance=ExtResource("14_w48qg")]
+z_index = 1
 position = Vector2(244, 156)
 
 [node name="Kitchen Counter" parent="World/Interactables" unique_id=1996095884 instance=ExtResource("11_efxa6")]
 position = Vector2(258, 156)
 
 [node name="Vase" parent="World/Interactables" unique_id=959860280 instance=ExtResource("12_ycdy4")]
-position = Vector2(242, 131)
+z_index = 1
+position = Vector2(245, 131)
+
+[node name="PC case" parent="World/Interactables" unique_id=1303291396 instance=ExtResource("13_cegan")]
+position = Vector2(478, 152)
+scale = Vector2(0.5, 0.5)
 
 [node name="Furniture" type="Node2D" parent="World" unique_id=358244518]
 position = Vector2(-248, 6)
@@ -2102,3 +2112,13 @@ scale = Vector2(1, 1.045)
 [node name="Chair left" parent="World/Furniture" unique_id=1092231263 instance=ExtResource("15_vivmo")]
 position = Vector2(453, 140)
 scale = Vector2(0.8, 0.7)
+
+[node name="Chair left2" parent="World/Furniture" unique_id=701712090 instance=ExtResource("16_2cqfq")]
+position = Vector2(528, 140)
+
+[node name="Window Kitchen" parent="World/Furniture" unique_id=223235715 instance=ExtResource("17_yaehf")]
+position = Vector2(492, 115)
+scale = Vector2(1, 1)
+
+[node name="Table Living room" parent="World/Furniture" unique_id=1517342991 instance=ExtResource("18_074og")]
+position = Vector2(685, 150)
