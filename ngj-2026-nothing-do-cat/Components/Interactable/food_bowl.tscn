@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://cwem1gdk8nil6"]
+
+[ext_resource type="Script" uid="uid://bkwetq2ehx745" path="res://interactable.gd" id="1_y77cg"]
+[ext_resource type="Texture2D" uid="uid://bv1nki8aj3xhc" path="res://Assets/Interactibles/bowl black 32x32.png" id="2_wsd4o"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ycdy4"]
+size = Vector2(31, 8.5)
+
+[node name="FoodBowl" type="Node2D" unique_id=540496720]
+script = ExtResource("1_y77cg")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=296387543]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=1905749974]
+position = Vector2(-0.5, -1.25)
+shape = SubResource("RectangleShape2D_ycdy4")
+disabled = true
+
+[node name="Sprite2D" type="Sprite2D" parent="StaticBody2D" unique_id=371754335]
+texture = ExtResource("2_wsd4o")
