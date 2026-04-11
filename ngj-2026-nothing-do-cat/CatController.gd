@@ -1,5 +1,6 @@
 extends CharacterBody2D
 
+@onready var animated_sprite = $AnimatedSprite2D
 
 var speed = 2;
 var jumpSpeed = 7;
@@ -15,10 +16,10 @@ func _physics_process(delta: float) -> void:
 
 func _input(event):
 	if event.is_action_pressed("left"):
-		#velocity.x = Vector2.LEFT.x * 32 * 2;
+		animated_sprite.flip_h = true
 		pass
 	else: if event.is_action_pressed("right"):
-		#velocity.x = Vector2.RIGHT.x * 32 * 2;
+		animated_sprite.flip_h = false
 		pass
 	else:
 		velocity.x = 0;

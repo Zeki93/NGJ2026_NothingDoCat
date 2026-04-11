@@ -1,7 +1,7 @@
-[gd_scene format=4 uid="uid://bognwhuhhi7x"]
+[gd_scene format=4 uid="uid://i77sal0608kw"]
 
 [ext_resource type="Texture2D" uid="uid://ryyepv34sgt5" path="res://Placeholders/Kings and Pigs/Sprites/14-TileSets/Terrain (32x32).png" id="1_37kl0"]
-[ext_resource type="PackedScene" uid="uid://jnj4nbybi3e" path="res://Components/cat.tscn" id="2_8uh7m"]
+[ext_resource type="PackedScene" path="res://Components/cat.tscn" id="2_8uh7m"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_8uh7m"]
 texture = ExtResource("1_37kl0")

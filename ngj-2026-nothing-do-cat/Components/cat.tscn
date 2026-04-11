@@ -1,4 +1,4 @@
-[gd_scene format=3 uid="uid://jnj4nbybi3e"]
+[gd_scene format=3 uid="uid://2g3dwubmwy12"]
 
 [ext_resource type="Script" uid="uid://c4iaqlfu4ueya" path="res://CatController.gd" id="1_54klj"]
 [ext_resource type="Texture2D" uid="uid://uk85ue1fpgsu" path="res://Assets/Cat/Cat for game/Cat standstill.png" id="2_ng0wv"]
