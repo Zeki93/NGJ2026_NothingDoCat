@@ -30,7 +30,7 @@ func _physics_process(delta: float) -> void:
 	get_input()
 	character_body.move_and_slide()
 	do_animation(character_body.velocity)
-	Globals.catPosition = global_position;
+	Globals.catPosition = character_body.global_position;
 
 func _input(event):
 	if event.is_action_pressed("jump"):
