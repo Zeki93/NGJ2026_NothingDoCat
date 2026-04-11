@@ -6,11 +6,11 @@
 [ext_resource type="Texture2D" uid="uid://uk85ue1fpgsu" path="res://Assets/Cat/Cat for game/Cat standstill.png" id="2_ng0wv"]
 [ext_resource type="Texture2D" uid="uid://b8epn82keddxx" path="res://Assets/Cat/Cat for game/Cat walk 1.png" id="3_aqdjw"]
 [ext_resource type="Texture2D" uid="uid://deeaxmt7hd6jd" path="res://Assets/Cat/Cat for game/Cat walk 2.png" id="4_de0fd"]
-[ext_resource type="Texture2D" uid="uid://c0lnxyu5hs4ff" path="res://Assets/Emojis 2/Angry Emoji.png" id="7_3rwt0"]
-[ext_resource type="Texture2D" uid="uid://d3eoih0j3y5f4" path="res://Assets/Emojis 2/Annoyed.png" id="7_eevxu"]
-[ext_resource type="Texture2D" uid="uid://bocseqbraqyw" path="res://Assets/Emojis 2/Happy emoji.png" id="9_y6p30"]
+[ext_resource type="Texture2D" path="res://Assets/Emojis/Angry Emoji.png" id="7_sxc8p"]
+[ext_resource type="Texture2D" path="res://Assets/Emojis/Annoyed.png" id="8_0ytby"]
+[ext_resource type="Texture2D" path="res://Assets/Emojis/Happy emoji.png" id="9_ijq4e"]
 [ext_resource type="Texture2D" uid="uid://blqexhm0mngid" path="res://Assets/Emojis 2/Heart _C.png" id="10_sxc8p"]
-[ext_resource type="Texture2D" uid="uid://7b2n426qxq6b" path="res://Assets/Emojis 2/MEOW.png" id="11_sxc8p"]
+[ext_resource type="Texture2D" path="res://Assets/Emojis/Heart_w_bubble.png" id="11_uhfw3"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_ig7tw"]
 animations = [{
@@ -57,7 +57,7 @@ size = Vector2(12, 11)
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("7_3rwt0")
+"texture": ExtResource("7_sxc8p")
 }],
 "loop": true,
 "name": &"ANGRY",
@@ -65,10 +65,7 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("7_eevxu")
-}, {
-"duration": 1.0,
-"texture": null
+"texture": ExtResource("8_0ytby")
 }],
 "loop": true,
 "name": &"ANNOYED",
@@ -76,10 +73,7 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("9_y6p30")
-}, {
-"duration": 1.0,
-"texture": null
+"texture": ExtResource("9_ijq4e")
 }],
 "loop": true,
 "name": &"HAPPY",
@@ -95,15 +89,18 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("11_sxc8p")
+"texture": ExtResource("11_uhfw3")
 }],
 "loop": true,
-"name": &"MEOW",
+"name": &"HEART_W_BUBBLE",
 "speed": 5.0
 }]
 
 [node name="Cat" type="Node2D" unique_id=1071178427]
 script = ExtResource("1_54klj")
+speed = null
+jumpSpeed = null
+meow_cooldown = null
 
 [node name="CharacterBody2D" type="CharacterBody2D" parent="." unique_id=304566032]
 
@@ -116,10 +113,9 @@ position = Vector2(1, 6.5)
 shape = SubResource("RectangleShape2D_h2yge")
 
 [node name="Emoji" type="AnimatedSprite2D" parent="CharacterBody2D" unique_id=1781054927]
-visible = false
 position = Vector2(3, -5)
 sprite_frames = SubResource("SpriteFrames_par1p")
-animation = &"MEOW"
+animation = &"HEART"
 
 [connection signal="animation_changed" from="CharacterBody2D/AnimatedSprite2D" to="CharacterBody2D" method="_on_animated_sprite_2d_animation_changed"]
 [connection signal="animation_finished" from="CharacterBody2D/AnimatedSprite2D" to="CharacterBody2D" method="_on_animated_sprite_2d_animation_finished"]

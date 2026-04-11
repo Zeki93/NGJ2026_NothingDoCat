@@ -6,58 +6,10 @@
 [ext_resource type="PackedScene" uid="uid://c0vd51sanvufp" path="res://Components/Camera/camera_2d.tscn" id="2_272bh"]
 [ext_resource type="PackedScene" uid="uid://dt5nh2q0hhkpr" path="res://Components/Human/human.tscn" id="4_1bvp3"]
 [ext_resource type="Script" uid="uid://dxwj2xskxnldv" path="res://Components/EmotionSpeachBubble/EmotionController.gd" id="4_272bh"]
-[ext_resource type="Texture2D" path="res://Assets/Emojis/Angry Emoji.png" id="5_efxa6"]
-[ext_resource type="Texture2D" path="res://Assets/Emojis/Heart_w_bubble.png" id="5_lquwl"]
-[ext_resource type="Texture2D" path="res://Assets/Emojis/Annoyed.png" id="6_dg77c"]
-[ext_resource type="Texture2D" path="res://Assets/Emojis/Happy emoji.png" id="7_ycdy4"]
-[ext_resource type="Texture2D" path="res://Assets/Emojis/Heart.png" id="8_w48qg"]
 [ext_resource type="PackedScene" uid="uid://csqsssic4pahg" path="res://Components/Interactable/Milk.tscn" id="12_dg77c"]
 [ext_resource type="PackedScene" uid="uid://cwem1gdk8nil6" path="res://Components/Interactable/food_bowl.tscn" id="13_2cqfq"]
 [ext_resource type="PackedScene" uid="uid://woh32ibdwhu6" path="res://Components/Interactable/glass.tscn" id="13_vivmo"]
 [ext_resource type="PackedScene" uid="uid://dg8cektx3fg1u" path="res://Components/Furniture/table.tscn" id="14_w48qg"]
-
-[sub_resource type="SpriteFrames" id="SpriteFrames_1bvp3"]
-animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": ExtResource("5_efxa6")
-}],
-"loop": true,
-"name": &"ANGRY",
-"speed": 5.0
-}, {
-"frames": [{
-"duration": 1.0,
-"texture": ExtResource("6_dg77c")
-}],
-"loop": true,
-"name": &"ANNOYED",
-"speed": 5.0
-}, {
-"frames": [{
-"duration": 1.0,
-"texture": ExtResource("7_ycdy4")
-}],
-"loop": true,
-"name": &"HAPPY",
-"speed": 5.0
-}, {
-"frames": [{
-"duration": 1.0,
-"texture": ExtResource("8_w48qg")
-}],
-"loop": true,
-"name": &"HEART",
-"speed": 5.0
-}, {
-"frames": [{
-"duration": 1.0,
-"texture": ExtResource("5_lquwl")
-}],
-"loop": true,
-"name": &"HEART_W_BUBBLE",
-"speed": 5.0
-}]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_lquwl"]
 texture = ExtResource("1_ig7tw")
@@ -2097,13 +2049,9 @@ position = Vector2(50, 100)
 z_index = 1
 position = Vector2(200, 144)
 
-[node name="Emoji" type="Node2D" parent="." unique_id=1581215847]
+[node name="EmojiController" type="Node2D" parent="." unique_id=1581215847]
+z_index = 2
 script = ExtResource("4_272bh")
-
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Emoji" unique_id=1782386329]
-position = Vector2(203, 115)
-sprite_frames = SubResource("SpriteFrames_1bvp3")
-animation = &"HEART"
 
 [node name="World" type="Node2D" parent="." unique_id=1833745796]
 
