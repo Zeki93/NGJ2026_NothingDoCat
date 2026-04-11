@@ -12,7 +12,6 @@
 [ext_resource type="PackedScene" uid="uid://csqsssic4pahg" path="res://Components/Interactable/Milk.tscn" id="12_dg77c"]
 [ext_resource type="PackedScene" uid="uid://bmlo15o2dyo80" path="res://Components/Interactable/vase.tscn" id="12_ycdy4"]
 [ext_resource type="PackedScene" uid="uid://cwem1gdk8nil6" path="res://Components/Interactable/food_bowl.tscn" id="13_2cqfq"]
-[ext_resource type="PackedScene" uid="uid://da6iw1f6x8de1" path="res://Components/Interactable/pc_case.tscn" id="13_cegan"]
 [ext_resource type="PackedScene" uid="uid://woh32ibdwhu6" path="res://Components/Interactable/glass.tscn" id="13_vivmo"]
 [ext_resource type="PackedScene" uid="uid://bn766b40jdxxu" path="res://Components/Furniture/kitchen_wall_cabinets.tscn" id="13_ycdy4"]
 [ext_resource type="PackedScene" uid="uid://cdxip243sfhfw" path="res://Components/Furniture/kitchen_wall_cabinets_2.tscn" id="14_vivmo"]
@@ -2235,12 +2234,9 @@ position = Vector2(258, 156)
 z_index = 1
 position = Vector2(245, 131)
 
-[node name="PC case" parent="World/Interactables" unique_id=1303291396 instance=ExtResource("13_cegan")]
-position = Vector2(457, 160)
-
 [node name="Cardboard box" parent="World/Interactables" unique_id=815696799 instance=ExtResource("15_0odxb")]
 z_index = 8
-position = Vector2(364, 155)
+position = Vector2(356, 155)
 
 [node name="Cardboard box2" parent="World/Interactables" unique_id=660965004 instance=ExtResource("16_lswn8")]
 position = Vector2(39, 122)
