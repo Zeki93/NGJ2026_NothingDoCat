@@ -2,6 +2,8 @@
 
 [ext_resource type="Script" uid="uid://c4iaqlfu4ueya" path="res://CatController.gd" id="1_54klj"]
 [ext_resource type="Texture2D" uid="uid://uk85ue1fpgsu" path="res://Assets/Cat/Cat for game/Cat standstill.png" id="2_ng0wv"]
+[ext_resource type="Texture2D" uid="uid://b8epn82keddxx" path="res://Assets/Cat/Cat for game/Cat walk 1.png" id="3_aqdjw"]
+[ext_resource type="Texture2D" uid="uid://deeaxmt7hd6jd" path="res://Assets/Cat/Cat for game/Cat walk 2.png" id="4_de0fd"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_ig7tw"]
 animations = [{
@@ -9,9 +11,20 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("2_ng0wv")
 }],
-"loop": true,
-"name": &"default",
+"loop": false,
+"name": &"IDLE",
 "speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_aqdjw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_de0fd")
+}],
+"loop": true,
+"name": &"MOVING",
+"speed": 4.0
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_h2yge"]
@@ -24,8 +37,13 @@ script = ExtResource("1_54klj")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CharacterBody2D" unique_id=1537512417]
 sprite_frames = SubResource("SpriteFrames_ig7tw")
-frame_progress = 0.60082036
+animation = &"MOVING"
+frame = 1
+frame_progress = 1.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D" unique_id=448345408]
 position = Vector2(1, 6.5)
 shape = SubResource("RectangleShape2D_h2yge")
+
+[connection signal="animation_changed" from="CharacterBody2D/AnimatedSprite2D" to="CharacterBody2D" method="_on_animated_sprite_2d_animation_changed"]
+[connection signal="animation_finished" from="CharacterBody2D/AnimatedSprite2D" to="CharacterBody2D" method="_on_animated_sprite_2d_animation_finished"]
