@@ -11,7 +11,6 @@
 [ext_resource type="PackedScene" uid="uid://bb1lionhhwrwx" path="res://Components/Furniture/kitchen_counter.tscn" id="11_efxa6"]
 [ext_resource type="PackedScene" uid="uid://csqsssic4pahg" path="res://Components/Interactable/Milk.tscn" id="12_dg77c"]
 [ext_resource type="PackedScene" uid="uid://bmlo15o2dyo80" path="res://Components/Interactable/vase.tscn" id="12_ycdy4"]
-[ext_resource type="PackedScene" uid="uid://cwem1gdk8nil6" path="res://Components/Interactable/food_bowl.tscn" id="13_2cqfq"]
 [ext_resource type="PackedScene" uid="uid://woh32ibdwhu6" path="res://Components/Interactable/glass.tscn" id="13_vivmo"]
 [ext_resource type="PackedScene" uid="uid://bn766b40jdxxu" path="res://Components/Furniture/kitchen_wall_cabinets.tscn" id="13_ycdy4"]
 [ext_resource type="PackedScene" uid="uid://cdxip243sfhfw" path="res://Components/Furniture/kitchen_wall_cabinets_2.tscn" id="14_vivmo"]
@@ -2211,21 +2210,32 @@ tile_set = SubResource("TileSet_lquwl")
 [node name="Interactables" type="Node2D" parent="World" unique_id=631466839]
 
 [node name="Milk" parent="World/Interactables" unique_id=1783850263 instance=ExtResource("12_dg77c")]
-position = Vector2(92, 129)
-
-[node name="FoodBowl - Full" parent="World/Interactables" unique_id=540496720 instance=ExtResource("13_2cqfq")]
-visible = false
-position = Vector2(159, 164)
+position = Vector2(80, 129.99998)
+rotation = 0.011823121
+humanInteractable = true
+human_interact_type = 1
+human_reaction_type = 1
 
 [node name="FoodBowl - Empty" parent="World/Interactables" unique_id=1144097210 instance=ExtResource("10_a6jrf")]
 position = Vector2(159, 164)
+catTnteractable = true
+catMeowable = true
+human_reaction_type = 2
 
 [node name="Glass" parent="World/Interactables" unique_id=1251227551 instance=ExtResource("13_vivmo")]
-position = Vector2(101, 133)
+position = Vector2(128, 134.99998)
+rotation = -0.002831731
+interactRange = 20
+catTnteractable = true
+catMeowable = true
+human_interact_type = 1
+human_reaction_type = 1
 
 [node name="Table" parent="World/Interactables" unique_id=2015739529 instance=ExtResource("14_w48qg")]
 z_index = 1
 position = Vector2(244, 156)
+catTnteractable = false
+catMeowable = false
 
 [node name="Kitchen Counter" parent="World/Interactables" unique_id=1996095884 instance=ExtResource("11_efxa6")]
 position = Vector2(258, 156)
@@ -2233,6 +2243,11 @@ position = Vector2(258, 156)
 [node name="Vase" parent="World/Interactables" unique_id=959860280 instance=ExtResource("12_ycdy4")]
 z_index = 1
 position = Vector2(245, 131)
+humanInteractable = true
+catTnteractable = true
+catMeowable = true
+human_interact_type = 1
+human_reaction_type = 1
 
 [node name="Cardboard box" parent="World/Interactables" unique_id=815696799 instance=ExtResource("15_0odxb")]
 z_index = 8
@@ -2246,6 +2261,8 @@ position = Vector2(415, 136)
 humanInteractable = true
 catTnteractable = true
 catMeowable = true
+human_interact_type = 1
+human_reaction_type = 1
 
 [node name="Furniture" type="Node2D" parent="World" unique_id=358244518]
 position = Vector2(-248, 6)

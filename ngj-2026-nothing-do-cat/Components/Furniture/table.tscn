@@ -20,16 +20,3 @@ shape = SubResource("RectangleShape2D_ycdy4")
 
 [node name="Sprite2D" type="Sprite2D" parent="Before" unique_id=1396521585]
 texture = ExtResource("2_k2cr1")
-
-[node name="After" type="StaticBody2D" parent="." unique_id=870325255]
-visible = false
-rotation = 3.1415927
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="After" unique_id=557165765]
-position = Vector2(-0.25, -10.5)
-shape = SubResource("RectangleShape2D_ycdy4")
-disabled = true
-
-[node name="Sprite2D" type="Sprite2D" parent="After" unique_id=2130602091]
-position = Vector2(-1, 0)
-texture = ExtResource("2_k2cr1")

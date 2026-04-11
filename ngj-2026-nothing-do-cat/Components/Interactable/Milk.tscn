@@ -22,6 +22,7 @@ texture = ExtResource("2_ojdgt")
 
 [node name="After" type="StaticBody2D" parent="." unique_id=1060925515]
 visible = false
+position = Vector2(0, 0.99999994)
 rotation = -2.083923
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="After" unique_id=1755394787]
@@ -30,4 +31,5 @@ shape = SubResource("RectangleShape2D_ycdy4")
 disabled = true
 
 [node name="Sprite2D" type="Sprite2D" parent="After" unique_id=1895752315]
+rotation = 0.51130915
 texture = ExtResource("2_ojdgt")
