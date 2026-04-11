@@ -1,0 +1,27 @@
+[gd_scene format=3 uid="uid://etmxitghs8pr"]
+
+[ext_resource type="Script" uid="uid://bkwetq2ehx745" path="res://interactable.gd" id="1_kfhx5"]
+[ext_resource type="Texture2D" uid="uid://wx56gwkhrp5b" path="res://Assets/Furniture/Chair.png" id="2_tvfxi"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ycdy4"]
+size = Vector2(26.79426, 4.392345)
+
+[node name="Chair left" type="Node2D" unique_id=1092231263]
+scale = Vector2(1, 1.045)
+script = ExtResource("1_kfhx5")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=314464499]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=1826191797]
+position = Vector2(1, 9.090912)
+shape = SubResource("RectangleShape2D_ycdy4")
+disabled = true
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="StaticBody2D" unique_id=558308518]
+position = Vector2(-13, -1.9138756)
+rotation = 1.5707964
+shape = SubResource("RectangleShape2D_ycdy4")
+disabled = true
+
+[node name="Sprite2D" type="Sprite2D" parent="StaticBody2D" unique_id=199664229]
+texture = ExtResource("2_tvfxi")

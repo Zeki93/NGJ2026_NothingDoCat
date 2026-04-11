@@ -14,6 +14,7 @@
 [ext_resource type="PackedScene" uid="uid://bn766b40jdxxu" path="res://Components/Furniture/kitchen_wall_cabinets.tscn" id="13_ycdy4"]
 [ext_resource type="PackedScene" uid="uid://cdxip243sfhfw" path="res://Components/Furniture/kitchen_wall_cabinets_2.tscn" id="14_vivmo"]
 [ext_resource type="PackedScene" uid="uid://dg8cektx3fg1u" path="res://Components/Furniture/table.tscn" id="14_w48qg"]
+[ext_resource type="PackedScene" uid="uid://etmxitghs8pr" path="res://Components/Furniture/chair_left.tscn" id="15_vivmo"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_lquwl"]
 texture = ExtResource("1_ig7tw")
@@ -2080,13 +2081,13 @@ position = Vector2(159, 164)
 position = Vector2(101, 133)
 
 [node name="Table" parent="World/Interactables" unique_id=2015739529 instance=ExtResource("14_w48qg")]
-position = Vector2(258, 156)
+position = Vector2(244, 156)
 
 [node name="Kitchen Counter" parent="World/Interactables" unique_id=1996095884 instance=ExtResource("11_efxa6")]
 position = Vector2(258, 156)
 
 [node name="Vase" parent="World/Interactables" unique_id=959860280 instance=ExtResource("12_ycdy4")]
-position = Vector2(433, 135)
+position = Vector2(420, 135)
 
 [node name="Furniture" type="Node2D" parent="World" unique_id=358244518]
 position = Vector2(-248, 6)
@@ -2097,3 +2098,7 @@ position = Vector2(288, 98)
 [node name="Kitchen wall cabinets2" parent="World/Furniture" unique_id=488648108 instance=ExtResource("14_vivmo")]
 position = Vector2(353, 97.00001)
 scale = Vector2(1, 1.045)
+
+[node name="Chair left" parent="World/Furniture" unique_id=1092231263 instance=ExtResource("15_vivmo")]
+position = Vector2(457, 140)
+scale = Vector2(0.8, 0.7)
