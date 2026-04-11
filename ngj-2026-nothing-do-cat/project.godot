@@ -17,6 +17,7 @@ config/features=PackedStringArray("4.6", "Forward Plus")
 [autoload]
 
 Globals="*uid://05pljh1ygd1g"
+GlobalSignalBus="*uid://dysvc3n3o48t1"
 
 [display]
 

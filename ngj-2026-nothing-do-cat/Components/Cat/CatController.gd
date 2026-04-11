@@ -1,15 +1,10 @@
 extends Node2D
 
+@onready var emoji_sprite = $CharacterBody2D/Emoji
 @onready var animated_sprite = $CharacterBody2D/AnimatedSprite2D
 @onready var character_body = $CharacterBody2D
 @export var speed = 2;
 @export var jumpSpeed = 7;
-
-@export var meow_cooldown = 1;
-var meow_ready = false;
-var meow_timer = 0;
-signal meow;
-
 
 enum states
 {
@@ -18,11 +13,10 @@ enum states
 }
 var state : states
 
-
-
-
 func _ready() -> void:
+	emoji_sprite.animation = "HEART"
 	state = states.IDLE
+	GlobalSignalBus.meow.connect(_on_meow)
 	pass
 
 func _physics_process(delta: float) -> void:
@@ -30,6 +24,7 @@ func _physics_process(delta: float) -> void:
 	get_input()
 	character_body.move_and_slide()
 	do_animation(character_body.velocity)
+	CatHelper.checkAndUpdateMeow(delta);
 	Globals.catPosition = character_body.global_position;
 
 func _input(event):
@@ -38,9 +33,7 @@ func _input(event):
 		pass
 		
 	if event.is_action_pressed("meow"):
-		meow.emit()
-		meow_ready = false
-		print("meow");
+		CatHelper.meow(emoji_sprite);
 
 func do_animation(velocity: Vector2):
 	if(velocity == Vector2.ZERO):
@@ -61,15 +54,14 @@ func do_animation(velocity: Vector2):
 		animated_sprite.flip_h = true
 		animated_sprite.play("MOVING")
 		state = states.MOVING;
-
-func updateMeow(delta: float):
-	if(!meow_ready):
-		meow_timer += delta;
-		if(meow_timer > meow_cooldown):
-			meow_ready = true;
-			meow_timer = 0;
 	
 
 func get_input():
 	var move = transform.x * Input.get_axis("left", "right") * Globals.tileSize.x * speed
 	character_body.velocity.x = move.x
+	
+
+func _on_meow():
+	# Your code here…
+	print("Human Heard Meow")
+	pass
