@@ -51,12 +51,3 @@ func do_animation(velocity: Vector2):
 func get_input():
 	var move = transform.x * Input.get_axis("left", "right") * Globals.tileSize.x * speed
 	velocity.x = move.x
-
-
-func _on_animated_sprite_2d_animation_finished() -> void:
-	animated_sprite.play("MOVING");
-	pass # Replace with function body.
-
-
-func _on_animated_sprite_2d_animation_changed() -> void:
-	pass # Replace with function body.
