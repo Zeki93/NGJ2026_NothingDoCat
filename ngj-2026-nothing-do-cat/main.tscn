@@ -7,6 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://dt5nh2q0hhkpr" path="res://Components/Human/human.tscn" id="4_1bvp3"]
 [ext_resource type="Script" uid="uid://dxwj2xskxnldv" path="res://Components/EmotionSpeachBubble/EmotionController.gd" id="4_272bh"]
 [ext_resource type="Texture2D" uid="uid://bufh243hsvih7" path="res://Assets/Wallpaper/Wallpaper purple - Living room.png" id="6_1u8w0"]
+[ext_resource type="PackedScene" uid="uid://b8nu1r4p1cthx" path="res://Components/Interactable/food_bowl___empty.tscn" id="10_a6jrf"]
 [ext_resource type="PackedScene" uid="uid://bb1lionhhwrwx" path="res://Components/Furniture/kitchen_counter.tscn" id="11_efxa6"]
 [ext_resource type="PackedScene" uid="uid://csqsssic4pahg" path="res://Components/Interactable/Milk.tscn" id="12_dg77c"]
 [ext_resource type="PackedScene" uid="uid://bmlo15o2dyo80" path="res://Components/Interactable/vase.tscn" id="12_ycdy4"]
@@ -2211,7 +2212,11 @@ tile_set = SubResource("TileSet_lquwl")
 [node name="Milk" parent="World/Interactables" unique_id=1783850263 instance=ExtResource("12_dg77c")]
 position = Vector2(92, 129)
 
-[node name="FoodBowl" parent="World/Interactables" unique_id=540496720 instance=ExtResource("13_2cqfq")]
+[node name="FoodBowl - Full" parent="World/Interactables" unique_id=540496720 instance=ExtResource("13_2cqfq")]
+visible = false
+position = Vector2(159, 164)
+
+[node name="FoodBowl - Empty" parent="World/Interactables" unique_id=1144097210 instance=ExtResource("10_a6jrf")]
 position = Vector2(159, 164)
 
 [node name="Glass" parent="World/Interactables" unique_id=1251227551 instance=ExtResource("13_vivmo")]
