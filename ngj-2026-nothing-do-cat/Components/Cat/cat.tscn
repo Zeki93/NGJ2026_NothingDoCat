@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://2g3dwubmwy12"]
 
-[ext_resource type="Script" uid="uid://c4iaqlfu4ueya" path="res://CatController.gd" id="1_54klj"]
+[ext_resource type="Script" uid="uid://c4iaqlfu4ueya" path="res://Components/Cat/CatController.gd" id="1_54klj"]
 [ext_resource type="Texture2D" uid="uid://b3nfln318m2qn" path="res://Assets/Cat/Cat for game/Cat Jumping.png" id="2_de0fd"]
 [ext_resource type="Texture2D" uid="uid://b0qq3gt4033fr" path="res://Assets/Cat/Cat for game/Cat landing.png" id="2_hgyb7"]
 [ext_resource type="Texture2D" uid="uid://uk85ue1fpgsu" path="res://Assets/Cat/Cat for game/Cat standstill.png" id="2_ng0wv"]
@@ -49,9 +49,9 @@ animations = [{
 size = Vector2(12, 11)
 
 [node name="Cat" type="Node2D" unique_id=1071178427]
+script = ExtResource("1_54klj")
 
 [node name="CharacterBody2D" type="CharacterBody2D" parent="." unique_id=304566032]
-script = ExtResource("1_54klj")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CharacterBody2D" unique_id=1537512417]
 sprite_frames = SubResource("SpriteFrames_ig7tw")

@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://dt5nh2q0hhkpr"]
 
 [ext_resource type="Texture2D" uid="uid://cqknjtnjgt2x7" path="res://Assets/Arzie Sprite/Arzie front.png" id="1_3cmav"]
-[ext_resource type="Script" uid="uid://d3u70v5kkhn5v" path="res://Components/HumanController.gd" id="1_e02jr"]
+[ext_resource type="Script" uid="uid://d3u70v5kkhn5v" path="res://Components/Human/HumanController.gd" id="1_e02jr"]
 [ext_resource type="Texture2D" uid="uid://cvsktin7g5a2x" path="res://Assets/Arzie Sprite/Arzie walking 1.png" id="3_hra02"]
 [ext_resource type="Texture2D" uid="uid://onbvqowlq3qd" path="res://Assets/Arzie Sprite/Arzie walking 2.png" id="4_2kk2p"]
 [ext_resource type="Texture2D" uid="uid://cs2np8qglbnqp" path="res://Assets/Arzie Sprite/Arzie side.png" id="4_dyir1"]
