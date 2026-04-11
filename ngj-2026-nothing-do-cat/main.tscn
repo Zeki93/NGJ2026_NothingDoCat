@@ -2,13 +2,17 @@
 
 [ext_resource type="Texture2D" uid="uid://ryyepv34sgt5" path="res://Placeholders/Kings and Pigs/Sprites/14-TileSets/Terrain (32x32).png" id="1_ig7tw"]
 [ext_resource type="PackedScene" uid="uid://2g3dwubmwy12" path="res://Components/Cat/cat.tscn" id="2_0xm2m"]
-[ext_resource type="Texture2D" uid="uid://mm0chxq4xrx" path="res://Assets/Wallpaper/Wallpaper sunset.png" id="2_7mycd"]
+[ext_resource type="Texture2D" uid="uid://dtcuw1fdal15i" path="res://Assets/Wallpaper/Wallpaper sunset.png" id="2_7mycd"]
 [ext_resource type="PackedScene" uid="uid://c0vd51sanvufp" path="res://Components/Camera/camera_2d.tscn" id="2_272bh"]
 [ext_resource type="PackedScene" uid="uid://dt5nh2q0hhkpr" path="res://Components/Human/human.tscn" id="4_1bvp3"]
 [ext_resource type="Script" uid="uid://dxwj2xskxnldv" path="res://Components/EmotionSpeachBubble/EmotionController.gd" id="4_272bh"]
+[ext_resource type="PackedScene" uid="uid://bb1lionhhwrwx" path="res://Components/Furniture/kitchen_counter.tscn" id="11_efxa6"]
 [ext_resource type="PackedScene" uid="uid://csqsssic4pahg" path="res://Components/Interactable/Milk.tscn" id="12_dg77c"]
+[ext_resource type="PackedScene" uid="uid://bmlo15o2dyo80" path="res://Components/Interactable/vase.tscn" id="12_ycdy4"]
 [ext_resource type="PackedScene" uid="uid://cwem1gdk8nil6" path="res://Components/Interactable/food_bowl.tscn" id="13_2cqfq"]
 [ext_resource type="PackedScene" uid="uid://woh32ibdwhu6" path="res://Components/Interactable/glass.tscn" id="13_vivmo"]
+[ext_resource type="PackedScene" uid="uid://bn766b40jdxxu" path="res://Components/Furniture/kitchen_wall_cabinets.tscn" id="13_ycdy4"]
+[ext_resource type="PackedScene" uid="uid://cdxip243sfhfw" path="res://Components/Furniture/kitchen_wall_cabinets_2.tscn" id="14_vivmo"]
 [ext_resource type="PackedScene" uid="uid://dg8cektx3fg1u" path="res://Components/Furniture/table.tscn" id="14_w48qg"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_lquwl"]
@@ -2070,12 +2074,26 @@ tile_set = SubResource("TileSet_lquwl")
 position = Vector2(92, 129)
 
 [node name="FoodBowl" parent="World/Interactables" unique_id=540496720 instance=ExtResource("13_2cqfq")]
-position = Vector2(152, 165)
+position = Vector2(159, 164)
 
 [node name="Glass" parent="World/Interactables" unique_id=1251227551 instance=ExtResource("13_vivmo")]
 position = Vector2(101, 133)
 
 [node name="Table" parent="World/Interactables" unique_id=2015739529 instance=ExtResource("14_w48qg")]
-position = Vector2(258, 152)
+position = Vector2(258, 156)
+
+[node name="Kitchen Counter" parent="World/Interactables" unique_id=1996095884 instance=ExtResource("11_efxa6")]
+position = Vector2(258, 156)
+
+[node name="Vase" parent="World/Interactables" unique_id=959860280 instance=ExtResource("12_ycdy4")]
+position = Vector2(433, 135)
 
 [node name="Furniture" type="Node2D" parent="World" unique_id=358244518]
+position = Vector2(-248, 6)
+
+[node name="Kitchen side cabinets" parent="World/Furniture" unique_id=587438445 instance=ExtResource("13_ycdy4")]
+position = Vector2(288, 98)
+
+[node name="Kitchen wall cabinets2" parent="World/Furniture" unique_id=488648108 instance=ExtResource("14_vivmo")]
+position = Vector2(353, 97.00001)
+scale = Vector2(1, 1.045)

@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://cdxip243sfhfw"]
+
+[ext_resource type="Script" uid="uid://bkwetq2ehx745" path="res://interactable.gd" id="1_fe2b6"]
+[ext_resource type="Texture2D" uid="uid://dbleq3vb1cq28" path="res://Assets/Furniture/Cabinets.png" id="2_7guqt"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ycdy4"]
+size = Vector2(19, 28.5)
+
+[node name="Kitchen wall cabinets2" type="Node2D" unique_id=488648108]
+script = ExtResource("1_fe2b6")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=1258114707]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=1828544442]
+shape = SubResource("RectangleShape2D_ycdy4")
+disabled = true
+
+[node name="Sprite2D" type="Sprite2D" parent="StaticBody2D" unique_id=1835574892]
+texture = ExtResource("2_7guqt")
