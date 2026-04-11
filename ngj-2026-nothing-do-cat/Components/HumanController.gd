@@ -29,7 +29,6 @@ func _ready() -> void:
 	placeholderTargets.push_front(400)
 	placeholderTargets.push_front(100)
 	state = states.IDLE;
-	print(str(states.IDLE))
 	animated_sprite.animation = "IDLE" 
 	characterBody.global_position.x = startPosition;
 	characterBody.global_position.y = standingHeight;
@@ -44,37 +43,38 @@ func _process(delta: float) -> void:
 				stateTime = 0;
 				state = states.MOVING;
 				animated_sprite.animation = "MOVING";
+				animated_sprite.play("MOVING");
 				characterBody.global_position.y = walkingHeight;
-				
 				#PLACEHOLDER LOGIC
-				if(targetPosition != null && targetPosition != 0):
-					placeholderTargets.push_back(targetPosition);
-				var newPos = placeholderTargets.pop_front();
-				if(newPos != null):
-					targetPosition = newPos;
+				getNextTargetPosition();
 				pass
 		states.MOVING:
 			var distanceFromTarget = Globals.humanPosition.x - targetPosition
 			if(abs(distanceFromTarget) < offset):
 				stateTime = 0;
 				state = states.IDLE;
+				animated_sprite.stop();
 				animated_sprite.animation = "IDLE"
 				characterBody.global_position.y = standingHeight;
-				print("IDLE")
 				characterBody.velocity.x = 0;
 			else:
 				if(targetPosition > Globals.humanPosition.x):
 					#Moving Right
 					animated_sprite.flip_h = true
 					characterBody.velocity.x = Globals.tileSize.x * speed;
-					pass
 				else:
 					#Moving Left
 					characterBody.velocity.x = -Globals.tileSize.x * speed;
 					animated_sprite.flip_h = false
-				pass
-			pass
-		pass
 	
 	characterBody.move_and_slide()
 	Globals.humanPosition = characterBody.global_position;
+
+func getNextTargetPosition():
+	if(targetPosition != null && targetPosition != 0):
+		placeholderTargets.push_back(targetPosition);
+	var newPos = placeholderTargets.pop_front();
+	if(newPos != null):
+			targetPosition = newPos;
+
+		
