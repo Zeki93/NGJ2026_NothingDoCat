@@ -1,0 +1,27 @@
+[gd_scene format=3 uid="uid://cklu6y0yo3q7s"]
+
+[ext_resource type="Script" uid="uid://bkwetq2ehx745" path="res://interactable.gd" id="1_3x1k6"]
+[ext_resource type="Texture2D" uid="uid://dobyrdxfwbny1" path="res://Assets/Furniture/single Sofa-1.png.png" id="2_3x1k6"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_hca7o"]
+size = Vector2(32, 2.5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ycdy4"]
+size = Vector2(23, 2)
+
+[node name="Single sofa" type="Node2D" unique_id=110150155]
+script = ExtResource("1_3x1k6")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=1119043459]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=805564801]
+position = Vector2(-11, 3.25)
+shape = SubResource("RectangleShape2D_hca7o")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="StaticBody2D" unique_id=1805260257]
+position = Vector2(-10.5, -19)
+shape = SubResource("RectangleShape2D_ycdy4")
+
+[node name="Sprite2D" type="Sprite2D" parent="StaticBody2D" unique_id=954760990]
+position = Vector2(2, -3)
+texture = ExtResource("2_3x1k6")
