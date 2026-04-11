@@ -2049,7 +2049,7 @@ position = Vector2(50, 100)
 z_index = 1
 position = Vector2(200, 144)
 
-[node name="Emoji" type="Node2D" parent="." unique_id=1581215847]
+[node name="EmojiController" type="Node2D" parent="." unique_id=1581215847]
 z_index = 2
 script = ExtResource("4_272bh")
 
