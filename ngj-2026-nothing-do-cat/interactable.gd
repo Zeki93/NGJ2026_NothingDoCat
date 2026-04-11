@@ -45,10 +45,8 @@ func interact():
 	before_interact.visible = false
 	before_interact_collsion.disabled = true;
 	after_interact.visible = true
-	humanReactToCat.emit()
+	GlobalSignalBus.humanReactToCat.emit(self)
 	pass
-
-
 
 func _on_meow():
 	if(catMeowable && _cat_in_range()):

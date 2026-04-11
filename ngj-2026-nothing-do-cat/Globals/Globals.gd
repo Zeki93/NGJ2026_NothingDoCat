@@ -8,6 +8,8 @@ var screenSize : Vector2 = Vector2(320, 160);
 var catPosition : Vector2;
 var humanPosition : Vector2;
 
+var human_interrupted_counter = 0;
+
 #Screen size
 #640 x 320
 #480 x 270
