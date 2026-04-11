@@ -1,9 +1,14 @@
 extends CharacterBody2D
 
 @onready var animated_sprite = $AnimatedSprite2D
-
 @export var speed = 2;
 @export var jumpSpeed = 7;
+
+@export var meow_cooldown = 1;
+var meow_ready = false;
+var meow_timer = 0;
+signal meow;
+
 
 enum states
 {
@@ -11,6 +16,9 @@ enum states
 	MOVING
 }
 var state : states
+
+
+
 
 func _ready() -> void:
 	state = states.IDLE
@@ -27,6 +35,11 @@ func _input(event):
 	if event.is_action_pressed("jump"):
 		velocity.y = Vector2.UP.y * Globals.tileSize.y * jumpSpeed;
 		pass
+		
+	if event.is_action_pressed("meow"):
+		meow.emit()
+		meow_ready = false
+		print("meow");
 
 func do_animation(velocity: Vector2):
 	if(velocity == Vector2.ZERO):
@@ -47,6 +60,14 @@ func do_animation(velocity: Vector2):
 		animated_sprite.flip_h = true
 		animated_sprite.play("MOVING")
 		state = states.MOVING;
+
+func updateMeow(delta: float):
+	if(!meow_ready):
+		meow_timer += delta;
+		if(meow_timer > meow_cooldown):
+			meow_ready = true;
+			meow_timer = 0;
+	
 
 func get_input():
 	var move = transform.x * Input.get_axis("left", "right") * Globals.tileSize.x * speed
