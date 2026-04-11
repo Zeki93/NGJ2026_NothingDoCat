@@ -16,6 +16,7 @@
 [ext_resource type="PackedScene" uid="uid://bn766b40jdxxu" path="res://Components/Furniture/kitchen_wall_cabinets.tscn" id="13_ycdy4"]
 [ext_resource type="PackedScene" uid="uid://cdxip243sfhfw" path="res://Components/Furniture/kitchen_wall_cabinets_2.tscn" id="14_vivmo"]
 [ext_resource type="PackedScene" uid="uid://dg8cektx3fg1u" path="res://Components/Furniture/table.tscn" id="14_w48qg"]
+[ext_resource type="PackedScene" uid="uid://clmacx84lm5se" path="res://Components/Interactable/cardboard_box.tscn" id="15_0odxb"]
 [ext_resource type="PackedScene" uid="uid://etmxitghs8pr" path="res://Components/Furniture/chair_left.tscn" id="15_vivmo"]
 [ext_resource type="PackedScene" uid="uid://br8kx6fpgf3jx" path="res://Components/Furniture/chair_left_2.tscn" id="16_2cqfq"]
 [ext_resource type="PackedScene" uid="uid://clm7m8240p8vk" path="res://Components/Furniture/window_kitchen.tscn" id="17_yaehf"]
@@ -2180,7 +2181,7 @@ sources/0 = SubResource("TileSetAtlasSource_0odxb")
 [node name="Main" type="Node2D" unique_id=1020652070]
 
 [node name="Cat" parent="." unique_id=1071178427 instance=ExtResource("2_0xm2m")]
-z_index = 5
+z_index = 6
 position = Vector2(50, 100)
 
 [node name="Camera2D" parent="." unique_id=352530552 instance=ExtResource("2_272bh")]
@@ -2228,6 +2229,10 @@ position = Vector2(245, 131)
 
 [node name="PC case" parent="World/Interactables" unique_id=1303291396 instance=ExtResource("13_cegan")]
 position = Vector2(477, 160)
+
+[node name="Cardboard box" parent="World/Interactables" unique_id=815696799 instance=ExtResource("15_0odxb")]
+z_index = 8
+position = Vector2(385, 154)
 
 [node name="Furniture" type="Node2D" parent="World" unique_id=358244518]
 position = Vector2(-248, 6)

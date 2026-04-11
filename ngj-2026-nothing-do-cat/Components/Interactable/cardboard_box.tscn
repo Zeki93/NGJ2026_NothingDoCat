@@ -1,0 +1,27 @@
+[gd_scene format=3 uid="uid://clmacx84lm5se"]
+
+[ext_resource type="Script" uid="uid://bkwetq2ehx745" path="res://interactable.gd" id="1_w5db4"]
+[ext_resource type="Texture2D" uid="uid://bib5kc2ojmclp" path="res://Assets/Interactibles/Box.png" id="2_w5db4"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ycdy4"]
+size = Vector2(8.75, 1.75)
+
+[node name="Cardboard box" type="Node2D" unique_id=815696799]
+z_index = 1
+script = ExtResource("1_w5db4")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=1775684163]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=597929812]
+position = Vector2(8, 9.5)
+rotation = 1.5707964
+shape = SubResource("RectangleShape2D_ycdy4")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="StaticBody2D" unique_id=2118946536]
+position = Vector2(-10, 9.375)
+rotation = 1.5707964
+shape = SubResource("RectangleShape2D_ycdy4")
+
+[node name="Sprite2D" type="Sprite2D" parent="StaticBody2D" unique_id=3301124]
+position = Vector2(-1, 0)
+texture = ExtResource("2_w5db4")
