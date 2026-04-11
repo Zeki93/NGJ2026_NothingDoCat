@@ -12,6 +12,7 @@ func _physics_process(delta: float) -> void:
 	velocity += Vector2.DOWN * 10;
 	get_input()
 	move_and_slide()
+	Globals.catPosition = global_position;
 
 
 func _input(event):
