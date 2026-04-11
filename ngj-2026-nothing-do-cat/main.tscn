@@ -2266,8 +2266,8 @@ position = Vector2(684, 130)
 
 [node name="Window 1 Living room" parent="World/Furniture" unique_id=646484421 instance=ExtResource("22_ryguw")]
 z_index = 0
-position = Vector2(684, 115)
+position = Vector2(753, 116)
 
 [node name="Window 2 Living room2" parent="World/Furniture" unique_id=987127013 instance=ExtResource("23_d13ii")]
 z_index = 0
-position = Vector2(810, 116)
+position = Vector2(834, 116)
