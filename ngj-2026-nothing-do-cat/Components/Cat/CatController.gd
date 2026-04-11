@@ -1,6 +1,7 @@
-extends CharacterBody2D
+extends Node2D
 
-@onready var animated_sprite = $AnimatedSprite2D
+@onready var animated_sprite = $CharacterBody2D/AnimatedSprite2D
+@onready var character_body = $CharacterBody2D
 @export var speed = 2;
 @export var jumpSpeed = 7;
 
@@ -25,15 +26,15 @@ func _ready() -> void:
 	pass
 
 func _physics_process(delta: float) -> void:
-	velocity += Vector2.DOWN * 10;
+	character_body.velocity += Vector2.DOWN * 10;
 	get_input()
-	move_and_slide()
-	do_animation(velocity)
+	character_body.move_and_slide()
+	do_animation(character_body.velocity)
 	Globals.catPosition = global_position;
 
 func _input(event):
 	if event.is_action_pressed("jump"):
-		velocity.y = Vector2.UP.y * Globals.tileSize.y * jumpSpeed;
+		character_body.velocity.y = Vector2.UP.y * Globals.tileSize.y * jumpSpeed;
 		pass
 		
 	if event.is_action_pressed("meow"):
@@ -46,10 +47,10 @@ func do_animation(velocity: Vector2):
 		animated_sprite.animation = "IDLE"
 		animated_sprite.stop()
 		state = states.IDLE
-	else: if (!is_on_floor() && velocity.y < 0):
+	else: if (!character_body.is_on_floor() && velocity.y < 0):
 		animated_sprite.play("JUMPING")
 		pass
-	else: if (!is_on_floor() && velocity.y > 0):
+	else: if (!character_body.is_on_floor() && velocity.y > 0):
 		animated_sprite.play("FALLING")
 		pass
 	else: if (velocity.x > 0):
@@ -71,4 +72,4 @@ func updateMeow(delta: float):
 
 func get_input():
 	var move = transform.x * Input.get_axis("left", "right") * Globals.tileSize.x * speed
-	velocity.x = move.x
+	character_body.velocity.x = move.x

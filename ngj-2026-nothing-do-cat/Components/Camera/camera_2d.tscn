@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://c0vd51sanvufp"]
+
+[ext_resource type="Script" uid="uid://borgivv1jn65f" path="res://Components/Camera/CameraController.gd" id="1_wf17w"]
+
+[node name="Camera2D" type="Camera2D" unique_id=352530552]
+offset = Vector2(0, 12)
+script = ExtResource("1_wf17w")

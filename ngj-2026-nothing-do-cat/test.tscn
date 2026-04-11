@@ -1,9 +1,9 @@
 [gd_scene format=4 uid="uid://i77sal0608kw"]
 
 [ext_resource type="Texture2D" uid="uid://ryyepv34sgt5" path="res://Placeholders/Kings and Pigs/Sprites/14-TileSets/Terrain (32x32).png" id="1_37kl0"]
-[ext_resource type="PackedScene" uid="uid://2g3dwubmwy12" path="res://Components/cat.tscn" id="2_8uh7m"]
-[ext_resource type="Script" uid="uid://borgivv1jn65f" path="res://CameraController.gd" id="3_ykrsh"]
-[ext_resource type="PackedScene" uid="uid://dt5nh2q0hhkpr" path="res://Components/human.tscn" id="4_g14j6"]
+[ext_resource type="PackedScene" uid="uid://2g3dwubmwy12" path="res://Components/Cat/cat.tscn" id="2_8uh7m"]
+[ext_resource type="Script" uid="uid://borgivv1jn65f" path="res://Components/Camera/CameraController.gd" id="3_ykrsh"]
+[ext_resource type="PackedScene" uid="uid://dt5nh2q0hhkpr" path="res://Components/Human/human.tscn" id="4_g14j6"]
 [ext_resource type="Texture2D" uid="uid://cg1vslpjn58mg" path="res://Assets/Emojis/Heart_w_bubble.png" id="5_vbegm"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ehkex"]
