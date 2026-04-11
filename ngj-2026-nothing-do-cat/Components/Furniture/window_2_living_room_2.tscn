@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://dyt2ips2bay0y"]
+
+[ext_resource type="Script" uid="uid://bkwetq2ehx745" path="res://interactable.gd" id="1_625o0"]
+[ext_resource type="Texture2D" uid="uid://cyc8aadyx4pp6" path="res://Assets/Furniture/Window-3.png-1.png.png" id="2_625o0"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ycdy4"]
+size = Vector2(8, 16)
+
+[node name="Window 2 Living room2" type="Node2D" unique_id=987127013]
+z_index = 1
+script = ExtResource("1_625o0")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=226216761]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=153580018]
+position = Vector2(-2, 0)
+shape = SubResource("RectangleShape2D_ycdy4")
+disabled = true
+
+[node name="Sprite2D" type="Sprite2D" parent="StaticBody2D" unique_id=254580229]
+position = Vector2(2, -3)
+texture = ExtResource("2_625o0")

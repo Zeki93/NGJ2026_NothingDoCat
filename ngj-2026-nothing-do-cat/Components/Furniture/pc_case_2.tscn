@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://bbetfoe1qxrru"]
+
+[ext_resource type="Script" uid="uid://bkwetq2ehx745" path="res://interactable.gd" id="1_4grsk"]
+[ext_resource type="Texture2D" uid="uid://blhwaeeke2qbo" path="res://Assets/Interactibles/Pc Screen - ON.png" id="2_4grsk"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ycdy4"]
+size = Vector2(8, 16)
+
+[node name="PC case2" type="Node2D" unique_id=676168176]
+z_index = 1
+script = ExtResource("1_4grsk")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=671475331]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=1544974205]
+position = Vector2(-2, 0)
+shape = SubResource("RectangleShape2D_ycdy4")
+disabled = true
+
+[node name="Sprite2D" type="Sprite2D" parent="StaticBody2D" unique_id=1018922023]
+position = Vector2(2, -3)
+texture = ExtResource("2_4grsk")

@@ -19,6 +19,10 @@
 [ext_resource type="PackedScene" uid="uid://br8kx6fpgf3jx" path="res://Components/Furniture/chair_left_2.tscn" id="16_2cqfq"]
 [ext_resource type="PackedScene" uid="uid://clm7m8240p8vk" path="res://Components/Furniture/window_kitchen.tscn" id="17_yaehf"]
 [ext_resource type="PackedScene" uid="uid://b5d3i0ehvq42x" path="res://Components/Furniture/table_living_room.tscn" id="18_074og"]
+[ext_resource type="PackedScene" uid="uid://bbetfoe1qxrru" path="res://Components/Furniture/pc_case_2.tscn" id="20_82xsv"]
+[ext_resource type="PackedScene" uid="uid://bkqpokwsjqidf" path="res://Components/Furniture/pc_screen_off.tscn" id="21_getpj"]
+[ext_resource type="PackedScene" uid="uid://cwva2i1jqb4qw" path="res://Components/Furniture/window_1_living_room.tscn" id="22_ryguw"]
+[ext_resource type="PackedScene" uid="uid://dyt2ips2bay0y" path="res://Components/Furniture/window_2_living_room_2.tscn" id="23_d13ii"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_lquwl"]
 texture = ExtResource("1_ig7tw")
@@ -2096,8 +2100,7 @@ z_index = 1
 position = Vector2(245, 131)
 
 [node name="PC case" parent="World/Interactables" unique_id=1303291396 instance=ExtResource("13_cegan")]
-position = Vector2(478, 152)
-scale = Vector2(0.5, 0.5)
+position = Vector2(477, 160)
 
 [node name="Furniture" type="Node2D" parent="World" unique_id=358244518]
 position = Vector2(-248, 6)
@@ -2122,3 +2125,17 @@ scale = Vector2(1, 1)
 
 [node name="Table Living room" parent="World/Furniture" unique_id=1517342991 instance=ExtResource("18_074og")]
 position = Vector2(685, 150)
+
+[node name="PC Screen ON" parent="World/Furniture" unique_id=676168176 instance=ExtResource("20_82xsv")]
+position = Vector2(684, 130)
+
+[node name="PC Screen Off" parent="World/Furniture" unique_id=294308808 instance=ExtResource("21_getpj")]
+position = Vector2(684, 130)
+
+[node name="Window 1 Living room" parent="World/Furniture" unique_id=646484421 instance=ExtResource("22_ryguw")]
+z_index = 0
+position = Vector2(684, 115)
+
+[node name="Window 2 Living room2" parent="World/Furniture" unique_id=987127013 instance=ExtResource("23_d13ii")]
+z_index = 0
+position = Vector2(810, 116)
