@@ -15,36 +15,30 @@ var state : states
 @export var speed = 1.5
 @export var offset = 2;
 @export var idleTime = 15;
-@export var workTargets = [];
+var workTargets = [];
 
 var startPosition = 200
 var standingHeight = 144
 var walkingHeight = 146;
 
-var targetPosition: int;
-var placeholderTargets = []
-
+var target : interactable;
 var stateTime = 0;
 
-func _ready() -> void:
-	
+func do_setup() -> void:
 	for child in interactables.get_children():
-		print(child)
 		if(child is interactable):
-			print(child.interactRange)
+			if(child.humanInteractable == true):
+				workTargets.push_front(child);
 			pass
 		pass
-		
-	
-	
-	placeholderTargets.push_front(200)
-	placeholderTargets.push_front(400)
-	placeholderTargets.push_front(100)
+
+func _ready() -> void:
 	state = states.IDLE;
 	animated_sprite.animation = "IDLE" 
 	characterBody.global_position.x = startPosition;
 	characterBody.global_position.y = standingHeight;
 	Globals.humanPosition = characterBody.global_position
+	call_deferred("do_setup")
 
 func _process(delta: float) -> void:
 	stateTime += delta;
@@ -61,16 +55,21 @@ func _process(delta: float) -> void:
 				getNextTargetPosition();
 				pass
 		states.MOVING:
-			var distanceFromTarget = Globals.humanPosition.x - targetPosition
+			var distanceFromTarget = Globals.humanPosition.x - target.item_position.x
 			if(abs(distanceFromTarget) < offset):
 				stateTime = 0;
-				state = states.IDLE;
-				animated_sprite.stop();
-				animated_sprite.animation = "IDLE"
+				if(target.human_interact_type == target.human_interact_types.IDLE):
+					state = states.IDLE;
+					animated_sprite.stop();
+					animated_sprite.animation = "IDLE"
+				else:
+					state = states.WORKING;
+					animated_sprite.stop();
+					animated_sprite.animation = "WORKING"
 				characterBody.global_position.y = standingHeight;
 				characterBody.velocity.x = 0;
 			else:
-				if(targetPosition > Globals.humanPosition.x):
+				if(target.item_position.x > Globals.humanPosition.x):
 					#Moving Right
 					animated_sprite.flip_h = true
 					characterBody.velocity.x = Globals.tileSize.x * speed;
@@ -83,10 +82,8 @@ func _process(delta: float) -> void:
 	Globals.humanPosition = characterBody.global_position;
 
 func getNextTargetPosition():
-	if(targetPosition != null && targetPosition != 0):
-		placeholderTargets.push_back(targetPosition);
-	var newPos = placeholderTargets.pop_front();
-	if(newPos != null):
-			targetPosition = newPos;
-
-		
+	if(target != null && target.item_position.x != 0):
+		workTargets.push_back(target);
+	var newTarget = workTargets.pop_front();
+	if(newTarget != null):
+			target = newTarget;
