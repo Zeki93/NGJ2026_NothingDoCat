@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://d2rvhc16sd6ei" path="res://Assets/Furniture/Kitchen Counter.png" id="2_fre46"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ycdy4"]
-size = Vector2(118, 31.5)
+size = Vector2(118, 1.5)
 
 [node name="Kitchen Counter" type="Node2D" unique_id=1996095884]
 script = ExtResource("1_8k83s")
@@ -12,7 +12,7 @@ script = ExtResource("1_8k83s")
 [node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=1488180757]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=1136202307]
-position = Vector2(-174, -3.75)
+position = Vector2(-174, -18.75)
 shape = SubResource("RectangleShape2D_ycdy4")
 
 [node name="Sprite2D" type="Sprite2D" parent="StaticBody2D" unique_id=1607832862]
