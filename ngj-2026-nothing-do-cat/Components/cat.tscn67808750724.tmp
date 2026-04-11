@@ -2,7 +2,6 @@
 
 [ext_resource type="Script" uid="uid://c4iaqlfu4ueya" path="res://CatController.gd" id="1_54klj"]
 [ext_resource type="Texture2D" uid="uid://b3nfln318m2qn" path="res://Assets/Cat/Cat for game/Cat Jumping.png" id="2_de0fd"]
-[ext_resource type="Texture2D" uid="uid://b0qq3gt4033fr" path="res://Assets/Cat/Cat for game/Cat landing.png" id="2_hgyb7"]
 [ext_resource type="Texture2D" uid="uid://uk85ue1fpgsu" path="res://Assets/Cat/Cat for game/Cat standstill.png" id="2_ng0wv"]
 [ext_resource type="Texture2D" uid="uid://b8epn82keddxx" path="res://Assets/Cat/Cat for game/Cat walk 1.png" id="3_aqdjw"]
 [ext_resource type="Texture2D" uid="uid://deeaxmt7hd6jd" path="res://Assets/Cat/Cat for game/Cat walk 2.png" id="4_de0fd"]
@@ -11,10 +10,10 @@
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("2_hgyb7")
+"texture": ExtResource("2_de0fd")
 }],
 "loop": true,
-"name": &"FALLING",
+"name": &"AIRBORNE",
 "speed": 5.0
 }, {
 "frames": [{
@@ -23,14 +22,6 @@ animations = [{
 }],
 "loop": false,
 "name": &"IDLE",
-"speed": 5.0
-}, {
-"frames": [{
-"duration": 1.0,
-"texture": ExtResource("2_de0fd")
-}],
-"loop": true,
-"name": &"JUMPING",
 "speed": 5.0
 }, {
 "frames": [{
@@ -52,10 +43,12 @@ size = Vector2(12, 11)
 
 [node name="CharacterBody2D" type="CharacterBody2D" parent="." unique_id=304566032]
 script = ExtResource("1_54klj")
+speed = null
+jumpSpeed = null
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CharacterBody2D" unique_id=1537512417]
 sprite_frames = SubResource("SpriteFrames_ig7tw")
-animation = &"FALLING"
+animation = &"AIRBORNE"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D" unique_id=448345408]
 position = Vector2(1, 6.5)

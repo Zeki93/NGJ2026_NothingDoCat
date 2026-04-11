@@ -33,7 +33,11 @@ func do_animation(velocity: Vector2):
 		animated_sprite.animation = "IDLE"
 		animated_sprite.stop()
 		state = states.IDLE
-	else: if (velocity.y > 0):
+	else: if (!is_on_floor() && velocity.y < 0):
+		animated_sprite.play("JUMPING")
+		pass
+	else: if (!is_on_floor() && velocity.y > 0):
+		animated_sprite.play("FALLING")
 		pass
 	else: if (velocity.x > 0):
 		animated_sprite.flip_h = false
