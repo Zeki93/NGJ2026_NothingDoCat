@@ -1917,4 +1917,4 @@ offset = Vector2(0, 12)
 script = ExtResource("3_h2yge")
 
 [node name="Human" parent="." unique_id=657312625 instance=ExtResource("4_1bvp3")]
-position = Vector2(200, 146)
+position = Vector2(200, 144)

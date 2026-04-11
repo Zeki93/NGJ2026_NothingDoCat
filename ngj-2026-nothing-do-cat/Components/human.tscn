@@ -2,6 +2,8 @@
 
 [ext_resource type="Texture2D" uid="uid://cqknjtnjgt2x7" path="res://Assets/Arzie Sprite/Arzie front.png" id="1_3cmav"]
 [ext_resource type="Script" uid="uid://d3u70v5kkhn5v" path="res://Components/HumanController.gd" id="1_e02jr"]
+[ext_resource type="Texture2D" uid="uid://cs2np8qglbnqp" path="res://Assets/Arzie Sprite/Arzie side.png" id="3_hra02"]
+[ext_resource type="Texture2D" uid="uid://c8bixaiwy54hi" path="res://Assets/Arzie Sprite/Arzie Back.png" id="4_kqkbu"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_h2yge"]
 
@@ -12,7 +14,23 @@ animations = [{
 "texture": ExtResource("1_3cmav")
 }],
 "loop": true,
-"name": &"default",
+"name": &"IDLE",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_hra02")
+}],
+"loop": true,
+"name": &"MOVING",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_kqkbu")
+}],
+"loop": true,
+"name": &"WORKING",
 "speed": 5.0
 }]
 
@@ -27,3 +45,4 @@ disabled = true
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CharacterBody2D" unique_id=1254766474]
 sprite_frames = SubResource("SpriteFrames_lquwl")
+animation = &"WORKING"
