@@ -26,21 +26,15 @@ grow_horizontal = 2
 grow_vertical = 0
 
 [node name="StartGameButton" type="Button" parent="CanvasLayer/ButtonBoxContainer" unique_id=1056026437]
+z_index = 5
 layout_mode = 2
 size_flags_horizontal = 6
 text = "Start 
 Game"
 script = ExtResource("1_1rerr")
 
-[node name="Control" type="Control" parent="CanvasLayer" unique_id=1755708722]
-layout_mode = 3
-anchors_preset = 0
-offset_left = -390.0
-offset_top = -320.0
-offset_right = -350.0
-offset_bottom = -280.0
-
 [node name="TextureRect" type="TextureRect" parent="CanvasLayer" unique_id=1828641780]
+visible = false
 offset_left = -390.0
 offset_top = -320.0
 offset_right = 726.0
