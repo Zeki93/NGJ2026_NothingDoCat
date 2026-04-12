@@ -2,9 +2,9 @@
 
 [ext_resource type="Script" uid="uid://bl4fqjyanxhb0" path="res://Scenes/menu.gd" id="1_1rerr"]
 [ext_resource type="Texture2D" uid="uid://chsw2dhrt0nxj" path="res://Assets/Wallpaper/Menu.png" id="2_xhh6f"]
-[ext_resource type="Texture2D" uid="uid://cx3o4he7b4xeo" path="res://Assets/Wallpaper/Play (1).png" id="3_cayip"]
+[ext_resource type="Texture2D" uid="uid://duac35gyqu0jy" path="res://Assets/Wallpaper/Play.png" id="3_jsrd8"]
 [ext_resource type="Texture2D" uid="uid://d7wfyceve0d6" path="res://Assets/Wallpaper/Quit.png" id="4_158mb"]
-[ext_resource type="Texture2D" uid="uid://bte1myuadqf7w" path="res://Assets/Wallpaper/Play Dark.png" id="4_wwsa2"]
+[ext_resource type="Texture2D" uid="uid://mseniuwn5mut" path="res://Assets/Wallpaper/Play Dark (1).png" id="4_jsrd8"]
 [ext_resource type="Texture2D" uid="uid://cjgr1psv4vc0v" path="res://Assets/Wallpaper/Quit Dark.png" id="6_jsrd8"]
 
 [node name="Menu" type="Control" unique_id=2013370792]
@@ -51,18 +51,18 @@ horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="Play" type="TextureButton" parent="CanvasLayer" unique_id=1573167124]
-offset_left = 38.0
-offset_top = 95.0
-offset_right = 102.0
-offset_bottom = 159.0
-texture_normal = ExtResource("3_cayip")
-texture_hover = ExtResource("4_wwsa2")
+offset_left = 37.0
+offset_top = 119.0
+offset_right = 101.0
+offset_bottom = 135.0
+texture_normal = ExtResource("3_jsrd8")
+texture_hover = ExtResource("4_jsrd8")
 
 [node name="Quit" type="TextureButton" parent="CanvasLayer" unique_id=323421272]
-offset_left = 104.0
-offset_top = 95.0
-offset_right = 168.0
-offset_bottom = 159.0
+offset_left = 110.0
+offset_top = 119.0
+offset_right = 174.0
+offset_bottom = 135.0
 texture_normal = ExtResource("4_158mb")
 texture_hover = ExtResource("6_jsrd8")
 
