@@ -6,6 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://uk85ue1fpgsu" path="res://Assets/Cat/Cat for game/Cat standstill.png" id="2_ng0wv"]
 [ext_resource type="Texture2D" uid="uid://b8epn82keddxx" path="res://Assets/Cat/Cat for game/Cat walk 1.png" id="3_aqdjw"]
 [ext_resource type="Texture2D" uid="uid://deeaxmt7hd6jd" path="res://Assets/Cat/Cat for game/Cat walk 2.png" id="4_de0fd"]
+[ext_resource type="Texture2D" uid="uid://ll65e3tqbyw3" path="res://Assets/Cat/Cat for game/Loaf cat.png" id="5_0ytby"]
 [ext_resource type="Texture2D" uid="uid://c0lnxyu5hs4ff" path="res://Assets/Emojis 2/Angry Emoji.png" id="7_3rwt0"]
 [ext_resource type="Texture2D" uid="uid://d3eoih0j3y5f4" path="res://Assets/Emojis 2/Annoyed.png" id="7_eevxu"]
 [ext_resource type="Texture2D" uid="uid://bocseqbraqyw" path="res://Assets/Emojis 2/Happy emoji.png" id="9_y6p30"]
@@ -36,6 +37,14 @@ animations = [{
 }],
 "loop": true,
 "name": &"JUMPING",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5_0ytby")
+}],
+"loop": true,
+"name": &"LOAF",
 "speed": 5.0
 }, {
 "frames": [{
@@ -109,7 +118,7 @@ script = ExtResource("1_54klj")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CharacterBody2D" unique_id=1537512417]
 sprite_frames = SubResource("SpriteFrames_ig7tw")
-animation = &"FALLING"
+animation = &"LOAF"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D" unique_id=448345408]
 position = Vector2(1, 6.5)
