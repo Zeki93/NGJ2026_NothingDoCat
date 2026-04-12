@@ -6,7 +6,7 @@
 [ext_resource type="Script" uid="uid://dxwj2xskxnldv" path="res://Components/EmotionSpeachBubble/EmotionController.gd" id="4_hdf80"]
 [ext_resource type="Texture2D" uid="uid://ryyepv34sgt5" path="res://Placeholders/Kings and Pigs/Sprites/14-TileSets/Terrain (32x32).png" id="5_jwpg7"]
 [ext_resource type="Texture2D" uid="uid://bufh243hsvih7" path="res://Assets/Wallpaper/Wallpaper purple - Living room.png" id="6_k2e45"]
-[ext_resource type="Texture2D" uid="uid://mm0chxq4xrx" path="res://Assets/Wallpaper/Wallpaper sunset.png" id="7_536cc"]
+[ext_resource type="Texture2D" uid="uid://dtcuw1fdal15i" path="res://Assets/Wallpaper/Wallpaper sunset.png" id="7_536cc"]
 [ext_resource type="Texture2D" uid="uid://dld7tr30qco4" path="res://Assets/Wallpaper/Wallpaper Bedroom.png" id="8_aqgau"]
 [ext_resource type="Texture2D" uid="uid://b05fbv4sd5l34" path="res://Assets/Wallpaper/SKy.png" id="8_neg2b"]
 [ext_resource type="PackedScene" uid="uid://csqsssic4pahg" path="res://Components/Interactable/Milk.tscn" id="9_8cuat"]
@@ -38,9 +38,9 @@
 [ext_resource type="Texture2D" uid="uid://ce2217et8mtwh" path="res://Assets/Ending Scene/Loafa cat-3.png.png" id="32_lx3vj"]
 [ext_resource type="Script" uid="uid://68qrgv37qu7j" path="res://Components/Gamestate/GamestateController.gd" id="33_ynmfv"]
 [ext_resource type="PackedScene" uid="uid://c72m7vy1qrbg0" path="res://Components/Furniture/night_window.tscn" id="36_jwpg7"]
-[ext_resource type="PackedScene" uid="uid://ds01e4aks4eau" path="res://Components/Audio/Audio.tscn" id="39_536cc"]
+[ext_resource type="PackedScene" path="res://Components/Audio/Audio.tscn" id="39_536cc"]
 [ext_resource type="Texture2D" uid="uid://c6tomqo0mck3f" path="res://Assets/Furniture/Door.png" id="40_o1aky"]
-[ext_resource type="Script" uid="uid://bowph5dxe8326" path="res://Scenes/GameMenuController.gd" id="41_8cuat"]
+[ext_resource type="Script" path="res://Scenes/GameMenuController.gd" id="41_8cuat"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_lquwl"]
 texture = ExtResource("5_jwpg7")
