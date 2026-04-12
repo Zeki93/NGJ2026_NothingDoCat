@@ -1,9 +1,0 @@
-[gd_scene format=3 uid="uid://ds01e4aks4eau"]
-
-[ext_resource type="Script" uid="uid://di84huldyy1pc" path="res://Scenes/Meow.gd" id="1_qmgo6"]
-
-[node name="Audio" type="Node2D" unique_id=2026710955]
-script = ExtResource("1_qmgo6")
-
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=875477409]
-autoplay = true
