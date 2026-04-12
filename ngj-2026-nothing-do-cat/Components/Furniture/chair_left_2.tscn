@@ -15,11 +15,13 @@ script = ExtResource("1_avas4")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=1735087040]
 position = Vector2(1, 9.090912)
 shape = SubResource("RectangleShape2D_ycdy4")
+disabled = true
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="StaticBody2D" unique_id=1420587736]
 position = Vector2(13.750002, -1.4285715)
 rotation = 1.5707964
 shape = SubResource("RectangleShape2D_ycdy4")
+disabled = true
 
 [node name="Sprite2D" type="Sprite2D" parent="StaticBody2D" unique_id=378238197]
 texture = ExtResource("2_1fyqc")

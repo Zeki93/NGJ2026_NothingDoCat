@@ -6,7 +6,7 @@
 [ext_resource type="Script" uid="uid://dxwj2xskxnldv" path="res://Components/EmotionSpeachBubble/EmotionController.gd" id="4_hdf80"]
 [ext_resource type="Texture2D" uid="uid://ryyepv34sgt5" path="res://Placeholders/Kings and Pigs/Sprites/14-TileSets/Terrain (32x32).png" id="5_jwpg7"]
 [ext_resource type="Texture2D" uid="uid://bufh243hsvih7" path="res://Assets/Wallpaper/Wallpaper purple - Living room.png" id="6_k2e45"]
-[ext_resource type="Texture2D" uid="uid://mm0chxq4xrx" path="res://Assets/Wallpaper/Wallpaper sunset.png" id="7_536cc"]
+[ext_resource type="Texture2D" uid="uid://dtcuw1fdal15i" path="res://Assets/Wallpaper/Wallpaper sunset.png" id="7_536cc"]
 [ext_resource type="Texture2D" uid="uid://dld7tr30qco4" path="res://Assets/Wallpaper/Wallpaper Bedroom.png" id="8_aqgau"]
 [ext_resource type="Texture2D" uid="uid://b05fbv4sd5l34" path="res://Assets/Wallpaper/SKy.png" id="8_neg2b"]
 [ext_resource type="PackedScene" uid="uid://csqsssic4pahg" path="res://Components/Interactable/Milk.tscn" id="9_8cuat"]
@@ -32,19 +32,19 @@
 [ext_resource type="PackedScene" uid="uid://dyt2ips2bay0y" path="res://Components/Furniture/window_2_living_room_2.tscn" id="27_2060n"]
 [ext_resource type="PackedScene" uid="uid://btechj0q3n2n6" path="res://Components/Furniture/coffee_table.tscn" id="27_r33sp"]
 [ext_resource type="PackedScene" uid="uid://dls5eya6fh3e7" path="res://Components/Furniture/window_3_living_room_3.tscn" id="28_6ml46"]
-[ext_resource type="PackedScene" path="res://Components/Furniture/castiel_frame.tscn" id="28_aa8k8"]
-[ext_resource type="PackedScene" path="res://Components/Furniture/castiel_pic.tscn" id="29_kqrg6"]
+[ext_resource type="PackedScene" uid="uid://bmfy7nqu71b5x" path="res://Components/Furniture/castiel_frame.tscn" id="28_aa8k8"]
+[ext_resource type="PackedScene" uid="uid://cl7y11yx3c3rh" path="res://Components/Furniture/castiel_pic.tscn" id="29_kqrg6"]
 [ext_resource type="Texture2D" uid="uid://bu01jo4qyu14p" path="res://Assets/Wallpaper/Tutorial.png" id="29_qax2n"]
 [ext_resource type="Texture2D" uid="uid://c8p8gswb0o2yy" path="res://Assets/Ending Scene/Loafa cat-1.png.png" id="30_y86h7"]
 [ext_resource type="Texture2D" uid="uid://bujuiwvydk36l" path="res://Assets/Ending Scene/Loafa cat-2.png.png" id="31_my4ki"]
 [ext_resource type="Texture2D" uid="uid://ce2217et8mtwh" path="res://Assets/Ending Scene/Loafa cat-3.png.png" id="32_lx3vj"]
-[ext_resource type="PackedScene" path="res://Components/Furniture/frames.tscn" id="33_kwxat"]
+[ext_resource type="PackedScene" uid="uid://3yoofsvb2vxx" path="res://Components/Furniture/frames.tscn" id="33_kwxat"]
 [ext_resource type="Script" uid="uid://68qrgv37qu7j" path="res://Components/Gamestate/GamestateController.gd" id="33_ynmfv"]
 [ext_resource type="PackedScene" uid="uid://c72m7vy1qrbg0" path="res://Components/Furniture/night_window.tscn" id="36_jwpg7"]
-[ext_resource type="PackedScene" path="res://Components/Furniture/frames_kitchen.tscn" id="36_nwwfm"]
-[ext_resource type="PackedScene" uid="uid://ds01e4aks4eau" path="res://Components/Audio/Audio.tscn" id="39_536cc"]
+[ext_resource type="PackedScene" uid="uid://bpx11wg882mex" path="res://Components/Furniture/frames_kitchen.tscn" id="36_nwwfm"]
+[ext_resource type="PackedScene" path="res://Components/Audio/Audio.tscn" id="39_536cc"]
 [ext_resource type="Texture2D" uid="uid://c6tomqo0mck3f" path="res://Assets/Furniture/Door.png" id="40_o1aky"]
-[ext_resource type="Script" uid="uid://bowph5dxe8326" path="res://Scenes/GameMenuController.gd" id="41_8cuat"]
+[ext_resource type="Script" path="res://Scenes/GameMenuController.gd" id="41_8cuat"]
 [ext_resource type="Texture2D" uid="uid://dykxn7yngovum" path="res://Assets/Wallpaper/Next Day.png" id="46_nwwfm"]
 [ext_resource type="Texture2D" uid="uid://ejjo25iv62yb" path="res://Assets/Wallpaper/Next Day Dark.png" id="47_v2nl5"]
 [ext_resource type="Texture2D" uid="uid://cn8uf0tgc50py" path="res://Assets/Wallpaper/Menu Button.png" id="48_dmskm"]
@@ -2597,7 +2597,7 @@ catMeowable = true
 
 [node name="Single sofa" parent="World/Interactables" unique_id=110150155 instance=ExtResource("19_xdkp6")]
 z_index = 1
-position = Vector2(613, 149)
+position = Vector2(615, 146)
 catTnteractable = true
 catMeowable = true
 
@@ -2717,3 +2717,5 @@ texture_hover = ExtResource("49_xdkp6")
 
 [connection signal="pressed" from="EndMenu/NextDay" to="EndMenu" method="_on_next_day_pressed"]
 [connection signal="pressed" from="EndMenu/Menu" to="EndMenu" method="_on_menu_pressed"]
+
+[editable path="World/Interactables/Single sofa"]
