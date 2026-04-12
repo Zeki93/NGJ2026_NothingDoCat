@@ -36,6 +36,7 @@
 [ext_resource type="Texture2D" uid="uid://c8p8gswb0o2yy" path="res://Assets/Ending Scene/Loafa cat-1.png.png" id="30_y86h7"]
 [ext_resource type="Texture2D" uid="uid://bujuiwvydk36l" path="res://Assets/Ending Scene/Loafa cat-2.png.png" id="31_my4ki"]
 [ext_resource type="Texture2D" uid="uid://ce2217et8mtwh" path="res://Assets/Ending Scene/Loafa cat-3.png.png" id="32_lx3vj"]
+[ext_resource type="PackedScene" uid="uid://3yoofsvb2vxx" path="res://Components/Furniture/frames.tscn" id="33_kwxat"]
 [ext_resource type="Script" uid="uid://68qrgv37qu7j" path="res://Components/Gamestate/GamestateController.gd" id="33_ynmfv"]
 [ext_resource type="PackedScene" uid="uid://c72m7vy1qrbg0" path="res://Components/Furniture/night_window.tscn" id="36_jwpg7"]
 [ext_resource type="PackedScene" path="res://Components/Audio/Audio.tscn" id="39_536cc"]
@@ -2629,7 +2630,10 @@ z_index = 0
 position = Vector2(834, 116)
 
 [node name="Window 3 Living room3" parent="World/Furniture" unique_id=809997669 instance=ExtResource("28_6ml46")]
-position = Vector2(619, 116)
+position = Vector2(713, 116)
+
+[node name="frames" parent="World/Furniture" unique_id=830237751 instance=ExtResource("33_kwxat")]
+position = Vector2(603, 113)
 
 [node name="Input" type="Node2D" parent="World" unique_id=556795045]
 
