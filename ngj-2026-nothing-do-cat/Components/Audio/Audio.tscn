@@ -1,0 +1,12 @@
+[gd_scene format=3 uid="uid://ds01e4aks4eau"]
+
+[ext_resource type="Script" uid="uid://di84huldyy1pc" path="res://Components/Audio/AudioController.gd" id="1_qmgo6"]
+
+[node name="Audio" type="Node2D" unique_id=2026710955]
+script = ExtResource("1_qmgo6")
+
+[node name="Meow_AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=875477409]
+autoplay = true
+
+[node name="Jump_AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1905487691]
+autoplay = true

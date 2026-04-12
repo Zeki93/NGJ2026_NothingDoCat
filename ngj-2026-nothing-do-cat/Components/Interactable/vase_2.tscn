@@ -1,0 +1,41 @@
+[gd_scene format=3 uid="uid://cnosdhb3lu2kn"]
+
+[ext_resource type="Script" uid="uid://bkwetq2ehx745" path="res://Components/Interactable/interactable.gd" id="1_8w3vy"]
+[ext_resource type="Texture2D" uid="uid://sa4dofdhjohs" path="res://Assets/Interactibles/lamp 3.png" id="2_jdr56"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ycdy4"]
+size = Vector2(19, 28.5)
+
+[node name="Lamp" type="Node2D" unique_id=115337096]
+z_index = 1
+script = ExtResource("1_8w3vy")
+humanInteractable = true
+catTnteractable = true
+catMeowable = true
+human_interact_type = 1
+human_reaction_type = 1
+
+[node name="Before" type="StaticBody2D" parent="." unique_id=374341348]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Before" unique_id=78435252]
+shape = SubResource("RectangleShape2D_ycdy4")
+disabled = true
+
+[node name="Sprite2D" type="Sprite2D" parent="Before" unique_id=954738424]
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("2_jdr56")
+
+[node name="After" type="StaticBody2D" parent="." unique_id=2111604861]
+visible = false
+position = Vector2(1, 8)
+rotation = -1.3788102
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="After" unique_id=1137138245]
+shape = SubResource("RectangleShape2D_ycdy4")
+disabled = true
+
+[node name="Sprite2D" type="Sprite2D" parent="After" unique_id=273967462]
+position = Vector2(4.1173177, 0.21839201)
+rotation = 2.6581364
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("2_jdr56")

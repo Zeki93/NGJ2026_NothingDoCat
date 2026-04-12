@@ -14,6 +14,7 @@ script = ExtResource("1_ncop8")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Before" unique_id=582669044]
 position = Vector2(-0.75, -4)
 shape = SubResource("RectangleShape2D_ycdy4")
+disabled = true
 
 [node name="Sprite2D" type="Sprite2D" parent="Before" unique_id=612703029]
 texture = ExtResource("2_deepm")

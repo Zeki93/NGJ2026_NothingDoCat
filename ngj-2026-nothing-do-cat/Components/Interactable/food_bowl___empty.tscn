@@ -10,21 +10,21 @@ size = Vector2(31, 8.5)
 [node name="FoodBowl - Empty" type="Node2D" unique_id=1144097210]
 script = ExtResource("1_ki3a0")
 
-[node name="Before" type="StaticBody2D" parent="." unique_id=990698603]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Before" unique_id=320513122]
-shape = SubResource("RectangleShape2D_ycdy4")
-disabled = true
-
-[node name="Sprite2D" type="Sprite2D" parent="Before" unique_id=759296578]
-texture = ExtResource("2_ki3a0")
-
-[node name="After" type="StaticBody2D" parent="." unique_id=1330949799]
+[node name="After" type="StaticBody2D" parent="." unique_id=990698603]
 visible = false
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="After" unique_id=963921602]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="After" unique_id=320513122]
 shape = SubResource("RectangleShape2D_ycdy4")
 disabled = true
 
-[node name="Sprite2D" type="Sprite2D" parent="After" unique_id=193214516]
+[node name="Sprite2D" type="Sprite2D" parent="After" unique_id=759296578]
+texture = ExtResource("2_ki3a0")
+
+[node name="Before" type="StaticBody2D" parent="." unique_id=1330949799]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Before" unique_id=963921602]
+shape = SubResource("RectangleShape2D_ycdy4")
+disabled = true
+
+[node name="Sprite2D" type="Sprite2D" parent="Before" unique_id=193214516]
 texture = ExtResource("2_aebju")

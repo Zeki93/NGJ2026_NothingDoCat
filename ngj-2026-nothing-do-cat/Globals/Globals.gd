@@ -9,6 +9,7 @@ var catPosition : Vector2;
 var humanPosition : Vector2;
 
 var human_interrupted_counter = 0;
+var gameEnd = false;
 
 #Screen size
 #640 x 320
