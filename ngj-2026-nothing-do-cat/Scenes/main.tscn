@@ -2565,6 +2565,7 @@ human_reaction_type = 1
 
 [node name="Lamp" parent="World/Interactables" unique_id=115337096 instance=ExtResource("17_k2e45")]
 position = Vector2(556, 137)
+scale = Vector2(0.5, 0.5)
 
 [node name="Cardboard box" parent="World/Interactables" unique_id=815696799 instance=ExtResource("15_s8vy0")]
 z_index = 8
