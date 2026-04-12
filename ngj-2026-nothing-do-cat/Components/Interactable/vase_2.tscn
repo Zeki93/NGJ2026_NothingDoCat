@@ -1,8 +1,7 @@
 [gd_scene format=3 uid="uid://cnosdhb3lu2kn"]
 
 [ext_resource type="Script" uid="uid://bkwetq2ehx745" path="res://Components/Interactable/interactable.gd" id="1_8w3vy"]
-[ext_resource type="Texture2D" uid="uid://b2qcan1cy2shv" path="res://Assets/Interactibles/Vase-1.png (1).png" id="2_pbt6m"]
-[ext_resource type="Texture2D" uid="uid://dfi50uu35iqvj" path="res://Assets/Interactibles/vase fallen.png" id="3_l5f6g"]
+[ext_resource type="Texture2D" uid="uid://bs60o2xeyho4a" path="res://Assets/Interactibles/lamp.png" id="2_jdr56"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ycdy4"]
 size = Vector2(19, 28.5)
@@ -23,7 +22,7 @@ shape = SubResource("RectangleShape2D_ycdy4")
 disabled = true
 
 [node name="Sprite2D" type="Sprite2D" parent="Before" unique_id=954738424]
-texture = ExtResource("2_pbt6m")
+texture = ExtResource("2_jdr56")
 
 [node name="After" type="StaticBody2D" parent="." unique_id=2111604861]
 visible = false
@@ -35,6 +34,6 @@ shape = SubResource("RectangleShape2D_ycdy4")
 disabled = true
 
 [node name="Sprite2D" type="Sprite2D" parent="After" unique_id=273967462]
-position = Vector2(2.991213, -0.22944912)
-rotation = 1.43117
-texture = ExtResource("3_l5f6g")
+position = Vector2(6.8713903, -1.3356631)
+rotation = 2.586578
+texture = ExtResource("2_jdr56")

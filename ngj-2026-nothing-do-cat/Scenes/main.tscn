@@ -2552,8 +2552,8 @@ catMeowable = true
 human_interact_type = 1
 human_reaction_type = 1
 
-[node name="Vase2" parent="World/Interactables" unique_id=115337096 instance=ExtResource("17_k2e45")]
-position = Vector2(555, 134)
+[node name="Lamp" parent="World/Interactables" unique_id=115337096 instance=ExtResource("17_k2e45")]
+position = Vector2(556, 142)
 
 [node name="Cardboard box" parent="World/Interactables" unique_id=815696799 instance=ExtResource("15_s8vy0")]
 z_index = 8
