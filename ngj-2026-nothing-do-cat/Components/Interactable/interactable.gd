@@ -1,7 +1,7 @@
 class_name interactable
 extends Node2D
 
-@export var interactRange = 24;
+@export var interactRange = 16;
 @export var humanInteractable = false;
 @export var catTnteractable = false;
 @export var catMeowable = false;
@@ -12,6 +12,7 @@ extends Node2D
 @onready var before_interact_collsion = $Before/CollisionShape2D;
 @onready var after_interact = $After;
 
+var hasInteracted = false;
 signal humanReactToCat;
 
 var item_position : Vector2;
@@ -20,6 +21,7 @@ enum human_reaction_types{
 	GO_TO_CAT_CUDDLE,
 	GO_TO_ITEM_ANNOYED,
 	GO_TO_ITEM_HAPPY,
+	GO_TO_ITEM_ANGRY,
 }
 
 enum human_interact_types{
@@ -34,21 +36,18 @@ func _ready() -> void:
 	
 func _process(delta: float) -> void:
 	item_position = global_position;
-	if(abs(Globals.catPosition.x - global_position.x) < interactRange ):
-		print("can Interact")
-		pass
 
 func _cat_in_range():
 	return abs(Globals.catPosition.x - global_position.x) < interactRange
 
 func interact():
-	before_interact.visible = false
-	before_interact_collsion.disabled = true;
-	after_interact.visible = true
-	humanReactToCat.emit()
+	if(!hasInteracted):
+		before_interact.visible = false
+		before_interact_collsion.disabled = true;
+		after_interact.visible = true
+		GlobalSignalBus.humanReactToCat.emit(self)
+		hasInteracted = true
 	pass
-
-
 
 func _on_meow():
 	if(catMeowable && _cat_in_range()):

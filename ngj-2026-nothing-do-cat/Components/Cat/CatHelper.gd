@@ -21,10 +21,6 @@ static func meow(cat_animated_sprite: AnimatedSprite2D):
 		GlobalSignalBus.meow.emit()
 		EmotionController.showCatEmoji(cat_animated_sprite, "MEOW");
 		meow_ready = false
-		#animated_sprite = cat_animated_sprite
-		#animated_sprite.animation = "MEOW";
-		#animated_sprite.play("MEOW")
-		#animated_sprite.visible = true;
 		print("meow");
 		return true;
 	return false;

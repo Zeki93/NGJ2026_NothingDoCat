@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://bmlo15o2dyo80"]
 
-[ext_resource type="Script" uid="uid://bkwetq2ehx745" path="res://interactable.gd" id="1_dpwpy"]
+[ext_resource type="Script" uid="uid://bkwetq2ehx745" path="res://Components/Interactable/interactable.gd" id="1_dpwpy"]
 [ext_resource type="Texture2D" uid="uid://b2qcan1cy2shv" path="res://Assets/Interactibles/Vase-1.png (1).png" id="2_dpwpy"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ycdy4"]
@@ -9,10 +9,23 @@ size = Vector2(19, 28.5)
 [node name="Vase" type="Node2D" unique_id=959860280]
 script = ExtResource("1_dpwpy")
 
-[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=1608839832]
+[node name="Before" type="StaticBody2D" parent="." unique_id=1608839832]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=775338567]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Before" unique_id=775338567]
 shape = SubResource("RectangleShape2D_ycdy4")
 
-[node name="Sprite2D" type="Sprite2D" parent="StaticBody2D" unique_id=967585530]
+[node name="Sprite2D" type="Sprite2D" parent="Before" unique_id=967585530]
+texture = ExtResource("2_dpwpy")
+
+[node name="After" type="StaticBody2D" parent="." unique_id=2115832587]
+visible = false
+position = Vector2(0, 1)
+rotation = 1.6473541
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="After" unique_id=778363693]
+shape = SubResource("RectangleShape2D_ycdy4")
+disabled = true
+
+[node name="Sprite2D" type="Sprite2D" parent="After" unique_id=1966338837]
+position = Vector2(4.9853544, -0.38241518)
 texture = ExtResource("2_dpwpy")

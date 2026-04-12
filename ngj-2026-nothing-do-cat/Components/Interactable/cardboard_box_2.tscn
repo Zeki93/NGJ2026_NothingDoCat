@@ -1,6 +1,6 @@
-[gd_scene format=3 uid="uid://qsjw68u5uvri"]
+[gd_scene format=3 uid="uid://b0m4y4w5danxf"]
 
-[ext_resource type="Script" uid="uid://bkwetq2ehx745" path="res://interactable.gd" id="1_xap0s"]
+[ext_resource type="Script" uid="uid://bkwetq2ehx745" path="res://Components/Interactable/interactable.gd" id="1_xap0s"]
 [ext_resource type="Texture2D" uid="uid://bib5kc2ojmclp" path="res://Assets/Interactibles/Box.png" id="2_f7rym"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ycdy4"]
@@ -10,18 +10,35 @@ size = Vector2(8.75, 1.75)
 z_index = 8
 script = ExtResource("1_xap0s")
 
-[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=593173265]
+[node name="Before" type="StaticBody2D" parent="." unique_id=593173265]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=1903569554]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Before" unique_id=1903569554]
 position = Vector2(8, 9.5)
 rotation = 1.5707964
 shape = SubResource("RectangleShape2D_ycdy4")
 
-[node name="CollisionShape2D2" type="CollisionShape2D" parent="StaticBody2D" unique_id=495901353]
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Before" unique_id=495901353]
 position = Vector2(-10, 9.375)
 rotation = 1.5707964
 shape = SubResource("RectangleShape2D_ycdy4")
 
-[node name="Sprite2D" type="Sprite2D" parent="StaticBody2D" unique_id=740494355]
+[node name="Sprite2D" type="Sprite2D" parent="Before" unique_id=740494355]
+position = Vector2(-1, 0)
+texture = ExtResource("2_f7rym")
+
+[node name="After" type="StaticBody2D" parent="." unique_id=1402414847]
+visible = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="After" unique_id=1013204541]
+position = Vector2(8, 9.5)
+rotation = 1.5707964
+shape = SubResource("RectangleShape2D_ycdy4")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="After" unique_id=1370453186]
+position = Vector2(-10, 9.375)
+rotation = 1.5707964
+shape = SubResource("RectangleShape2D_ycdy4")
+
+[node name="Sprite2D" type="Sprite2D" parent="After" unique_id=1818912356]
 position = Vector2(-1, 0)
 texture = ExtResource("2_f7rym")

@@ -16,7 +16,8 @@ var state : states
 func _ready() -> void:
 	emoji_sprite.animation = "HEART"
 	state = states.IDLE
-	GlobalSignalBus.meow.connect(_on_meow)
+	GlobalSignalBus.humanReactToCat.connect(_on_cuddle);
+	
 	pass
 
 func _physics_process(delta: float) -> void:
@@ -59,9 +60,6 @@ func do_animation(velocity: Vector2):
 func get_input():
 	var move = transform.x * Input.get_axis("left", "right") * Globals.tileSize.x * speed
 	character_body.velocity.x = move.x
-	
 
-func _on_meow():
-	# Your code here…
-	print("Human Heard Meow")
+func _on_cuddle():
 	pass
