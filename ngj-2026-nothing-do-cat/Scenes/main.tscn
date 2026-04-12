@@ -28,6 +28,7 @@
 [ext_resource type="PackedScene" uid="uid://b5d3i0ehvq42x" path="res://Components/Furniture/table_living_room.tscn" id="25_2daye"]
 [ext_resource type="PackedScene" uid="uid://cwva2i1jqb4qw" path="res://Components/Furniture/window_1_living_room.tscn" id="26_1semv"]
 [ext_resource type="PackedScene" uid="uid://dyt2ips2bay0y" path="res://Components/Furniture/window_2_living_room_2.tscn" id="27_2060n"]
+[ext_resource type="PackedScene" uid="uid://btechj0q3n2n6" path="res://Components/Furniture/coffee_table.tscn" id="27_r33sp"]
 [ext_resource type="PackedScene" uid="uid://dls5eya6fh3e7" path="res://Components/Furniture/window_3_living_room_3.tscn" id="28_6ml46"]
 [ext_resource type="Texture2D" uid="uid://bu01jo4qyu14p" path="res://Assets/Wallpaper/Tutorial.png" id="29_qax2n"]
 [ext_resource type="Texture2D" uid="uid://c8p8gswb0o2yy" path="res://Assets/Ending Scene/Loafa cat-1.png.png" id="30_y86h7"]
@@ -2533,6 +2534,9 @@ scale = Vector2(1, 1)
 
 [node name="Table Living room" parent="World/Furniture" unique_id=1517342991 instance=ExtResource("25_2daye")]
 position = Vector2(665, 150)
+
+[node name="Coffee Table" parent="World/Furniture" unique_id=1252553829 instance=ExtResource("27_r33sp")]
+position = Vector2(803, 150)
 
 [node name="Window 1 Living room" parent="World/Furniture" unique_id=646484421 instance=ExtResource("26_1semv")]
 z_index = 0
