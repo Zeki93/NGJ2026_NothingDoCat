@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://cl7y11yx3c3rh"]
+
+[ext_resource type="Script" uid="uid://bkwetq2ehx745" path="res://Components/Interactable/interactable.gd" id="1_irrqa"]
+[ext_resource type="Texture2D" uid="uid://qiijolxgp2uu" path="res://Assets/Furniture/rn_image_picker_lib_temp_77a6aaae-4cd6-4f22-adf9-3302aa7017ca.jpg" id="2_irrqa"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ycdy4"]
+size = Vector2(42.5, 40.000004)
+
+[node name="Castiel Pic" type="Node2D" unique_id=2122640855]
+script = ExtResource("1_irrqa")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=1629142825]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=1666336125]
+position = Vector2(-5.9604645e-07, -5.7142863)
+shape = SubResource("RectangleShape2D_ycdy4")
+disabled = true
+
+[node name="Sprite2D" type="Sprite2D" parent="StaticBody2D" unique_id=209371598]
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("2_irrqa")
+flip_h = true

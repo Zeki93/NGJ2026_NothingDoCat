@@ -32,6 +32,8 @@
 [ext_resource type="PackedScene" uid="uid://dyt2ips2bay0y" path="res://Components/Furniture/window_2_living_room_2.tscn" id="27_2060n"]
 [ext_resource type="PackedScene" uid="uid://btechj0q3n2n6" path="res://Components/Furniture/coffee_table.tscn" id="27_r33sp"]
 [ext_resource type="PackedScene" uid="uid://dls5eya6fh3e7" path="res://Components/Furniture/window_3_living_room_3.tscn" id="28_6ml46"]
+[ext_resource type="PackedScene" uid="uid://bmfy7nqu71b5x" path="res://Components/Furniture/castiel_frame.tscn" id="28_aa8k8"]
+[ext_resource type="PackedScene" uid="uid://cl7y11yx3c3rh" path="res://Components/Furniture/castiel_pic.tscn" id="29_kqrg6"]
 [ext_resource type="Texture2D" uid="uid://bu01jo4qyu14p" path="res://Assets/Wallpaper/Tutorial.png" id="29_qax2n"]
 [ext_resource type="Texture2D" uid="uid://c8p8gswb0o2yy" path="res://Assets/Ending Scene/Loafa cat-1.png.png" id="30_y86h7"]
 [ext_resource type="Texture2D" uid="uid://bujuiwvydk36l" path="res://Assets/Ending Scene/Loafa cat-2.png.png" id="31_my4ki"]
@@ -2614,6 +2616,14 @@ position = Vector2(524, 140)
 [node name="Window Kitchen" parent="World/Furniture" unique_id=223235715 instance=ExtResource("24_ptfg5")]
 position = Vector2(492, 115)
 scale = Vector2(1, 1)
+
+[node name="castiel frame" parent="World/Furniture" unique_id=879334244 instance=ExtResource("28_aa8k8")]
+z_index = 1
+position = Vector2(411, 98)
+
+[node name="Castiel Pic" parent="World/Furniture" unique_id=2122640855 instance=ExtResource("29_kqrg6")]
+position = Vector2(410, 98.00001)
+scale = Vector2(0.055, 0.055)
 
 [node name="Table Living room" parent="World/Furniture" unique_id=1517342991 instance=ExtResource("25_2daye")]
 position = Vector2(665, 150)
