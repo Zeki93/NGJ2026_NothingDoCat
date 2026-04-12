@@ -27,7 +27,7 @@
 [ext_resource type="PackedScene" uid="uid://b5d3i0ehvq42x" path="res://Components/Furniture/table_living_room.tscn" id="25_2daye"]
 [ext_resource type="PackedScene" uid="uid://cwva2i1jqb4qw" path="res://Components/Furniture/window_1_living_room.tscn" id="26_1semv"]
 [ext_resource type="PackedScene" uid="uid://dyt2ips2bay0y" path="res://Components/Furniture/window_2_living_room_2.tscn" id="27_2060n"]
-[ext_resource type="PackedScene" path="res://Components/Furniture/window_3_living_room_3.tscn" id="28_6ml46"]
+[ext_resource type="PackedScene" uid="uid://dls5eya6fh3e7" path="res://Components/Furniture/window_3_living_room_3.tscn" id="28_6ml46"]
 [ext_resource type="Texture2D" uid="uid://bu01jo4qyu14p" path="res://Assets/Wallpaper/Tutorial.png" id="29_qax2n"]
 [ext_resource type="Texture2D" uid="uid://c8p8gswb0o2yy" path="res://Assets/Ending Scene/Loafa cat-1.png.png" id="30_y86h7"]
 [ext_resource type="Texture2D" uid="uid://bujuiwvydk36l" path="res://Assets/Ending Scene/Loafa cat-2.png.png" id="31_my4ki"]
@@ -2429,11 +2429,13 @@ human_interact_type = 1
 human_reaction_type = 3
 
 [node name="Couch" parent="World/Interactables" unique_id=1254645421 instance=ExtResource("18_dmskm")]
+z_index = 1
 position = Vector2(505, 149)
 catTnteractable = true
 catMeowable = true
 
 [node name="Single sofa" parent="World/Interactables" unique_id=110150155 instance=ExtResource("19_xdkp6")]
+z_index = 1
 position = Vector2(599, 149)
 catTnteractable = true
 catMeowable = true
