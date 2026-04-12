@@ -41,6 +41,7 @@
 [ext_resource type="PackedScene" path="res://Components/Audio/Audio.tscn" id="39_536cc"]
 [ext_resource type="Texture2D" uid="uid://c6tomqo0mck3f" path="res://Assets/Furniture/Door.png" id="40_o1aky"]
 [ext_resource type="Script" path="res://Scenes/GameMenuController.gd" id="41_8cuat"]
+[ext_resource type="Texture2D" uid="uid://bnctp5ih5r8p3" path="res://Assets/Texts/next day.png" id="42_o1aky"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_lquwl"]
 texture = ExtResource("5_jwpg7")
@@ -2675,6 +2676,7 @@ offset_bottom = 40.0
 script = ExtResource("41_8cuat")
 
 [node name="NextDay" type="Button" parent="EndMenu" unique_id=1839369421]
+visible = false
 layout_mode = 0
 offset_left = 747.0
 offset_top = 89.0
@@ -2684,12 +2686,22 @@ theme_override_font_sizes/font_size = 16
 text = "Next Day"
 
 [node name="Menu" type="Button" parent="EndMenu" unique_id=1552947920]
+visible = false
 layout_mode = 0
 offset_left = 748.0
 offset_top = 125.0
 offset_right = 801.0
 offset_bottom = 156.0
 text = "Menu"
+
+[node name="TextureButton" type="TextureButton" parent="EndMenu" unique_id=800264215]
+layout_mode = 0
+offset_left = 757.0
+offset_top = 61.000004
+offset_right = 1013.0
+offset_bottom = 317.0
+scale = Vector2(0.32020992, 0.32020992)
+texture_normal = ExtResource("42_o1aky")
 
 [connection signal="pressed" from="EndMenu/NextDay" to="EndMenu" method="_on_next_day_pressed"]
 [connection signal="pressed" from="EndMenu/Menu" to="EndMenu" method="_on_menu_pressed"]
