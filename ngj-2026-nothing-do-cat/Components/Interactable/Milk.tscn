@@ -16,6 +16,7 @@ catMeowable = true
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Before" unique_id=1584379185]
 position = Vector2(-1.5, 0)
 shape = SubResource("RectangleShape2D_ycdy4")
+disabled = true
 
 [node name="Sprite2D" type="Sprite2D" parent="Before" unique_id=1144518787]
 texture = ExtResource("2_ojdgt")
