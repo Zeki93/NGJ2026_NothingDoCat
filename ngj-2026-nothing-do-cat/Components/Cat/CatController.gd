@@ -23,7 +23,6 @@ func _ready() -> void:
 	state = states.IDLE
 	animated_sprite.animation = "LOAF"
 	GlobalSignalBus.humanReactToCat.connect(_on_cuddle);
-	
 	pass
 
 func _physics_process(delta: float) -> void:
@@ -42,13 +41,14 @@ func _run_simulation(delta: float):
 	Globals.catPosition = character_body.global_position;
 
 func _input(event):
-	if event.is_action_pressed("jump") && character_body.is_on_floor():
-		character_body.velocity.y = Vector2.UP.y * Globals.tileSize.y * jumpSpeed;
-		GlobalSignalBus.CatJump.emit();
-		pass
+	if(!Globals.gameEnd):
+		if event.is_action_pressed("jump") && character_body.is_on_floor():
+			character_body.velocity.y = Vector2.UP.y * Globals.tileSize.y * jumpSpeed;
+			GlobalSignalBus.CatJump.emit();
+			pass
 		
-	if event.is_action_pressed("meow"):
-		CatHelper.meow(emoji_sprite);
+		if event.is_action_pressed("meow"):
+			CatHelper.meow(emoji_sprite);
 
 func do_animation(velocity: Vector2, delta: float):
 	if(velocity == Vector2.ZERO):
