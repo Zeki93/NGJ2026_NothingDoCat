@@ -5,11 +5,11 @@ static var catEmoji : AnimatedSprite2D;
 static var humanEmoji : AnimatedSprite2D;
 
 static var cat_emote_playing = false;
-var cat_timer = 0;
+static var cat_timer = 0;
 var cat_cooldown = 1;
 
 static var human_emote_playing = false;
-var human_timer = 0;
+static var human_timer = 0;
 var human_cooldown = 2;
 
 
@@ -38,11 +38,13 @@ static func showCatEmoji(animated_sprite: AnimatedSprite2D, animation : String):
 	catEmoji = animated_sprite;
 	cat_emote_playing = true;
 	showEmoji(catEmoji, animation);
+	cat_timer = 0;
 	
 static func showHumanEmoji(animated_sprite: AnimatedSprite2D, animation : String):
 	humanEmoji = animated_sprite;
 	human_emote_playing = true;
 	showEmoji(humanEmoji, animation);
+	human_timer = 0;
 
 static func showEmoji(animated_sprite: AnimatedSprite2D, animation : String):
 	animated_sprite.animation = animation;
