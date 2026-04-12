@@ -10,3 +10,6 @@ autoplay = true
 
 [node name="Jump_AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1905487691]
 autoplay = true
+
+[node name="Angry_AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=109468522]
+autoplay = true

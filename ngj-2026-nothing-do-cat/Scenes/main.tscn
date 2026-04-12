@@ -2698,22 +2698,20 @@ offset_bottom = 40.0
 script = ExtResource("41_8cuat")
 
 [node name="NextDay" type="TextureButton" parent="EndMenu" unique_id=800264215]
-visible = false
 layout_mode = 0
-offset_left = 753.0
-offset_top = 77.0
-offset_right = 1009.0
-offset_bottom = 333.0
+offset_left = 751.0
+offset_top = 73.0
+offset_right = 815.0
+offset_bottom = 137.0
 texture_normal = ExtResource("46_nwwfm")
 texture_hover = ExtResource("47_v2nl5")
 
 [node name="Menu" type="TextureButton" parent="EndMenu" unique_id=1087268856]
-visible = false
 layout_mode = 0
-offset_left = 753.0
-offset_top = 103.0
-offset_right = 817.0
-offset_bottom = 167.0
+offset_left = 751.0
+offset_top = 116.0
+offset_right = 815.0
+offset_bottom = 180.0
 texture_normal = ExtResource("48_dmskm")
 texture_hover = ExtResource("49_xdkp6")
 
