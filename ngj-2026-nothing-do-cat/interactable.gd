@@ -36,9 +36,6 @@ func _ready() -> void:
 	
 func _process(delta: float) -> void:
 	item_position = global_position;
-	if(abs(Globals.catPosition.x - global_position.x) < interactRange ):
-		print("can Interact")
-		pass
 
 func _cat_in_range():
 	return abs(Globals.catPosition.x - global_position.x) < interactRange
