@@ -72,6 +72,9 @@ func _process(delta: float) -> void:
 							EmotionController.showHumanEmoji(emoji_sprite, "HEART");
 							GlobalSignalBus.CuddleCat.emit();
 							pass
+						else:
+							EmotionController.showHumanEmoji(emoji_sprite, "ANNOYED");
+							_change_state_to_idle();
 					target.human_reaction_types.GO_TO_ITEM_HAPPY:
 						_change_state_to_idle();
 						EmotionController.showHumanEmoji(emoji_sprite, "HAPPY");
