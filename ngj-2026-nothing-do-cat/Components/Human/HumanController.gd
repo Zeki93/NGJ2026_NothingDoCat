@@ -49,6 +49,13 @@ func _ready() -> void:
 func _process(delta: float) -> void:
 	stateTime += delta;
 	
+	if(Globals.gameEnd):
+		animated_sprite.visible = false;
+		pass
+	else:
+		run_simulation()
+
+func run_simulation():
 	match(state):
 		states.IDLE:
 			if(stateTime > idleTime):

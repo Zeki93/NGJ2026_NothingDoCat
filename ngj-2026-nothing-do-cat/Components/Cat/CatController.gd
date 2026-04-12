@@ -21,6 +21,18 @@ func _ready() -> void:
 	pass
 
 func _physics_process(delta: float) -> void:
+	if(Globals.gameEnd):
+		animated_sprite.visible = false
+		pass
+	else:
+		character_body.velocity += Vector2.DOWN * 10;
+		get_input()
+		character_body.move_and_slide()
+		do_animation(character_body.velocity)
+		CatHelper.checkAndUpdateMeow(delta);
+		Globals.catPosition = character_body.global_position;
+
+func _run_simulation(delta: float):
 	character_body.velocity += Vector2.DOWN * 10;
 	get_input()
 	character_body.move_and_slide()
