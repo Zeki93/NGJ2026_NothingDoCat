@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://cnosdhb3lu2kn"]
 
 [ext_resource type="Script" uid="uid://bkwetq2ehx745" path="res://Components/Interactable/interactable.gd" id="1_8w3vy"]
-[ext_resource type="Texture2D" uid="uid://uu8qg1d8dp02" path="res://Assets/Interactibles/lamp 2.png" id="2_jdr56"]
+[ext_resource type="Texture2D" uid="uid://sa4dofdhjohs" path="res://Assets/Interactibles/lamp 3.png" id="2_jdr56"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ycdy4"]
 size = Vector2(19, 28.5)
