@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://dyyp5m17x211p"]
 
-[ext_resource type="Script" uid="uid://bkwetq2ehx745" path="res://interactable.gd" id="1_3x1k6"]
+[ext_resource type="Script" uid="uid://bkwetq2ehx745" path="res://Components/Interactable/interactable.gd" id="1_3x1k6"]
 [ext_resource type="Texture2D" uid="uid://dobyrdxfwbny1" path="res://Assets/Furniture/single Sofa-1.png.png" id="2_3x1k6"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_hca7o"]

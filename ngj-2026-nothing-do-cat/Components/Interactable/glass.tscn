@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://woh32ibdwhu6"]
 
-[ext_resource type="Script" uid="uid://bkwetq2ehx745" path="res://interactable.gd" id="1_ncop8"]
+[ext_resource type="Script" uid="uid://bkwetq2ehx745" path="res://Components/Interactable/interactable.gd" id="1_ncop8"]
 [ext_resource type="Texture2D" uid="uid://cif6xnmpa3weu" path="res://Assets/Interactibles/Glass.png" id="2_deepm"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ycdy4"]

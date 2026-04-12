@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://csqsssic4pahg"]
 
-[ext_resource type="Script" uid="uid://bkwetq2ehx745" path="res://interactable.gd" id="1_ojdgt"]
+[ext_resource type="Script" uid="uid://bkwetq2ehx745" path="res://Components/Interactable/interactable.gd" id="1_ojdgt"]
 [ext_resource type="Texture2D" uid="uid://b6byrcsou4ibi" path="res://Assets/Interactibles/milk 16.png" id="2_ojdgt"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ycdy4"]

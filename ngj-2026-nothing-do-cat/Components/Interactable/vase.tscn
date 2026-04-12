@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://bmlo15o2dyo80"]
 
-[ext_resource type="Script" uid="uid://bkwetq2ehx745" path="res://interactable.gd" id="1_dpwpy"]
+[ext_resource type="Script" uid="uid://bkwetq2ehx745" path="res://Components/Interactable/interactable.gd" id="1_dpwpy"]
 [ext_resource type="Texture2D" uid="uid://b2qcan1cy2shv" path="res://Assets/Interactibles/Vase-1.png (1).png" id="2_dpwpy"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ycdy4"]

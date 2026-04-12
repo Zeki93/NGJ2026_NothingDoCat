@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://cwem1gdk8nil6"]
 
-[ext_resource type="Script" uid="uid://bkwetq2ehx745" path="res://interactable.gd" id="1_y77cg"]
+[ext_resource type="Script" uid="uid://bkwetq2ehx745" path="res://Components/Interactable/interactable.gd" id="1_y77cg"]
 [ext_resource type="Texture2D" uid="uid://006wqarat3jc" path="res://Assets/Interactibles/cat bowl FINAL.png" id="2_y77cg"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ycdy4"]
