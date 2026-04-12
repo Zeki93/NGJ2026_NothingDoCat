@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://3yoofsvb2vxx"]
+
+[ext_resource type="Script" uid="uid://bkwetq2ehx745" path="res://Components/Interactable/interactable.gd" id="1_no0xo"]
+[ext_resource type="Texture2D" uid="uid://cxoki5v0edcuk" path="res://Assets/Furniture/picture frames.png" id="2_no0xo"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ycdy4"]
+size = Vector2(8, 16)
+
+[node name="frames" type="Node2D" unique_id=830237751]
+script = ExtResource("1_no0xo")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=2084501443]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=2094811548]
+position = Vector2(-2, 0)
+shape = SubResource("RectangleShape2D_ycdy4")
+disabled = true
+
+[node name="Sprite2D" type="Sprite2D" parent="StaticBody2D" unique_id=1446597631]
+position = Vector2(2, -3)
+texture = ExtResource("2_no0xo")

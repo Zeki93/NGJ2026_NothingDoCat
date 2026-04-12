@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://bpx11wg882mex"]
+
+[ext_resource type="Script" uid="uid://bkwetq2ehx745" path="res://Components/Interactable/interactable.gd" id="1_m1c5d"]
+[ext_resource type="Texture2D" uid="uid://btrknlqginrs2" path="res://Assets/Furniture/Frames kitchen.png" id="2_m1c5d"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ycdy4"]
+size = Vector2(8, 16)
+
+[node name="frames kitchen" type="Node2D" unique_id=1877080001]
+script = ExtResource("1_m1c5d")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=752545214]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=1273097184]
+position = Vector2(-2, 0)
+shape = SubResource("RectangleShape2D_ycdy4")
+disabled = true
+
+[node name="Sprite2D" type="Sprite2D" parent="StaticBody2D" unique_id=1521109135]
+position = Vector2(2, -3)
+texture = ExtResource("2_m1c5d")

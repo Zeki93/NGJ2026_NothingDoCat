@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://bvocna8bm8r14"]
 
 [ext_resource type="Script" uid="uid://bl4fqjyanxhb0" path="res://Scenes/start_game_button.gd" id="1_1rerr"]
+[ext_resource type="Texture2D" uid="uid://chsw2dhrt0nxj" path="res://Assets/Wallpaper/Menu.png" id="2_xhh6f"]
 
 [node name="Menu" type="Control" unique_id=2013370792]
 layout_mode = 3
@@ -13,32 +14,26 @@ grow_vertical = 2
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1820004527]
 
 [node name="ButtonBoxContainer" type="BoxContainer" parent="CanvasLayer" unique_id=1383655322]
+z_index = 2
 anchors_preset = -1
 anchor_left = 0.5
 anchor_top = 1.1010001
 anchor_right = 0.5
 anchor_bottom = 1.1010001
-offset_left = 1.0
-offset_top = -100.18001
-offset_right = 55.0
-offset_bottom = -46.180008
+offset_left = -43.0
+offset_top = -108.18001
+offset_right = 11.0
+offset_bottom = -54.180008
 grow_horizontal = 2
 grow_vertical = 0
 
-[node name="StartGameButton" type="Button" parent="CanvasLayer/ButtonBoxContainer" unique_id=1056026437]
-z_index = 5
-layout_mode = 2
-size_flags_horizontal = 6
-text = "Start 
-Game"
-script = ExtResource("1_1rerr")
-
 [node name="TextureRect" type="TextureRect" parent="CanvasLayer" unique_id=1828641780]
-visible = false
-offset_left = -390.0
-offset_top = -320.0
-offset_right = 726.0
-offset_bottom = 485.0
+z_index = -1
+offset_right = 1116.0
+offset_bottom = 805.0
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("2_xhh6f")
+expand_mode = 2
 
 [node name="Title" type="Label" parent="CanvasLayer" unique_id=756738650]
 offset_left = 40.0
@@ -50,4 +45,15 @@ text = "\"Do Nothing\" - Cat"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[connection signal="pressed" from="CanvasLayer/ButtonBoxContainer/StartGameButton" to="CanvasLayer/ButtonBoxContainer/StartGameButton" method="_on_pressed"]
+[node name="StartGameButton" type="Button" parent="CanvasLayer" unique_id=1056026437]
+z_index = 5
+offset_left = 117.0
+offset_top = 90.0
+offset_right = 171.0
+offset_bottom = 144.0
+size_flags_horizontal = 6
+text = "Start 
+Game"
+script = ExtResource("1_1rerr")
+
+[connection signal="pressed" from="CanvasLayer/StartGameButton" to="CanvasLayer/StartGameButton" method="_on_pressed"]
