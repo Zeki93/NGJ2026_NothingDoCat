@@ -92,6 +92,7 @@ func run_simulation():
 						pass
 					target.human_reaction_types.GO_TO_ITEM_ANGRY:
 						EmotionController.showHumanEmoji(emoji_sprite, "ANGRY");
+						GlobalSignalBus.ArzieAngry.emit();
 						_change_state_to_idle();
 						pass
 				stateTime = idleTime - interruptTime;
