@@ -6,7 +6,7 @@
 [ext_resource type="Script" uid="uid://dxwj2xskxnldv" path="res://Components/EmotionSpeachBubble/EmotionController.gd" id="4_hdf80"]
 [ext_resource type="Texture2D" uid="uid://ryyepv34sgt5" path="res://Placeholders/Kings and Pigs/Sprites/14-TileSets/Terrain (32x32).png" id="5_jwpg7"]
 [ext_resource type="Texture2D" uid="uid://bufh243hsvih7" path="res://Assets/Wallpaper/Wallpaper purple - Living room.png" id="6_k2e45"]
-[ext_resource type="Texture2D" uid="uid://dtcuw1fdal15i" path="res://Assets/Wallpaper/Wallpaper sunset.png" id="7_536cc"]
+[ext_resource type="Texture2D" uid="uid://mm0chxq4xrx" path="res://Assets/Wallpaper/Wallpaper sunset.png" id="7_536cc"]
 [ext_resource type="Texture2D" uid="uid://dld7tr30qco4" path="res://Assets/Wallpaper/Wallpaper Bedroom.png" id="8_aqgau"]
 [ext_resource type="Texture2D" uid="uid://b05fbv4sd5l34" path="res://Assets/Wallpaper/SKy.png" id="8_neg2b"]
 [ext_resource type="PackedScene" uid="uid://csqsssic4pahg" path="res://Components/Interactable/Milk.tscn" id="9_8cuat"]
@@ -32,19 +32,19 @@
 [ext_resource type="PackedScene" uid="uid://dyt2ips2bay0y" path="res://Components/Furniture/window_2_living_room_2.tscn" id="27_2060n"]
 [ext_resource type="PackedScene" uid="uid://btechj0q3n2n6" path="res://Components/Furniture/coffee_table.tscn" id="27_r33sp"]
 [ext_resource type="PackedScene" uid="uid://dls5eya6fh3e7" path="res://Components/Furniture/window_3_living_room_3.tscn" id="28_6ml46"]
-[ext_resource type="PackedScene" uid="uid://bmfy7nqu71b5x" path="res://Components/Furniture/castiel_frame.tscn" id="28_aa8k8"]
-[ext_resource type="PackedScene" uid="uid://cl7y11yx3c3rh" path="res://Components/Furniture/castiel_pic.tscn" id="29_kqrg6"]
+[ext_resource type="PackedScene" path="res://Components/Furniture/castiel_frame.tscn" id="28_aa8k8"]
+[ext_resource type="PackedScene" path="res://Components/Furniture/castiel_pic.tscn" id="29_kqrg6"]
 [ext_resource type="Texture2D" uid="uid://bu01jo4qyu14p" path="res://Assets/Wallpaper/Tutorial.png" id="29_qax2n"]
 [ext_resource type="Texture2D" uid="uid://c8p8gswb0o2yy" path="res://Assets/Ending Scene/Loafa cat-1.png.png" id="30_y86h7"]
 [ext_resource type="Texture2D" uid="uid://bujuiwvydk36l" path="res://Assets/Ending Scene/Loafa cat-2.png.png" id="31_my4ki"]
 [ext_resource type="Texture2D" uid="uid://ce2217et8mtwh" path="res://Assets/Ending Scene/Loafa cat-3.png.png" id="32_lx3vj"]
-[ext_resource type="PackedScene" uid="uid://3yoofsvb2vxx" path="res://Components/Furniture/frames.tscn" id="33_kwxat"]
+[ext_resource type="PackedScene" path="res://Components/Furniture/frames.tscn" id="33_kwxat"]
 [ext_resource type="Script" uid="uid://68qrgv37qu7j" path="res://Components/Gamestate/GamestateController.gd" id="33_ynmfv"]
 [ext_resource type="PackedScene" uid="uid://c72m7vy1qrbg0" path="res://Components/Furniture/night_window.tscn" id="36_jwpg7"]
-[ext_resource type="PackedScene" uid="uid://bpx11wg882mex" path="res://Components/Furniture/frames_kitchen.tscn" id="36_nwwfm"]
-[ext_resource type="PackedScene" path="res://Components/Audio/Audio.tscn" id="39_536cc"]
+[ext_resource type="PackedScene" path="res://Components/Furniture/frames_kitchen.tscn" id="36_nwwfm"]
+[ext_resource type="PackedScene" uid="uid://ds01e4aks4eau" path="res://Components/Audio/Audio.tscn" id="39_536cc"]
 [ext_resource type="Texture2D" uid="uid://c6tomqo0mck3f" path="res://Assets/Furniture/Door.png" id="40_o1aky"]
-[ext_resource type="Script" path="res://Scenes/GameMenuController.gd" id="41_8cuat"]
+[ext_resource type="Script" uid="uid://bowph5dxe8326" path="res://Scenes/GameMenuController.gd" id="41_8cuat"]
 [ext_resource type="Texture2D" uid="uid://bnctp5ih5r8p3" path="res://Assets/Texts/next day.png" id="42_o1aky"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_lquwl"]
@@ -2695,7 +2695,6 @@ offset_bottom = 40.0
 script = ExtResource("41_8cuat")
 
 [node name="NextDay" type="Button" parent="EndMenu" unique_id=1839369421]
-visible = false
 layout_mode = 0
 offset_left = 747.0
 offset_top = 89.0
@@ -2705,7 +2704,6 @@ theme_override_font_sizes/font_size = 16
 text = "Next Day"
 
 [node name="Menu" type="Button" parent="EndMenu" unique_id=1552947920]
-visible = false
 layout_mode = 0
 offset_left = 748.0
 offset_top = 125.0
@@ -2714,6 +2712,7 @@ offset_bottom = 156.0
 text = "Menu"
 
 [node name="TextureButton" type="TextureButton" parent="EndMenu" unique_id=800264215]
+visible = false
 layout_mode = 0
 offset_left = 757.0
 offset_top = 61.000004

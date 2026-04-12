@@ -12,6 +12,7 @@ var human_interrupted_counter = 0;
 var gameEnd = false;
 
 #Screen size
+#1280 x 640
 #640 x 320
 #480 x 270
 #320 x 160
