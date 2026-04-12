@@ -36,6 +36,7 @@
 [ext_resource type="Texture2D" uid="uid://bujuiwvydk36l" path="res://Assets/Ending Scene/Loafa cat-2.png.png" id="31_my4ki"]
 [ext_resource type="Texture2D" uid="uid://ce2217et8mtwh" path="res://Assets/Ending Scene/Loafa cat-3.png.png" id="32_lx3vj"]
 [ext_resource type="Script" uid="uid://68qrgv37qu7j" path="res://Components/Gamestate/GamestateController.gd" id="33_ynmfv"]
+[ext_resource type="PackedScene" uid="uid://c72m7vy1qrbg0" path="res://Components/Furniture/night_window.tscn" id="36_jwpg7"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_lquwl"]
 texture = ExtResource("5_jwpg7")
@@ -2628,9 +2629,13 @@ sprite_frames = SubResource("SpriteFrames_kq58d")
 [node name="Bedroom" type="Node2D" parent="World" unique_id=914807221]
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="World/Bedroom" unique_id=1779373553]
+z_index = 1
 position = Vector2(682, 150)
 sprite_frames = SubResource("SpriteFrames_0rl1p")
 autoplay = "default"
+
+[node name="Night Window" parent="World/Bedroom" unique_id=409718061 instance=ExtResource("36_jwpg7")]
+position = Vector2(682, 123)
 
 [node name="Gamestate" type="Node2D" parent="." unique_id=157705989]
 script = ExtResource("33_ynmfv")

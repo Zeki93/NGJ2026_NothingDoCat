@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://c72m7vy1qrbg0"]
+
+[ext_resource type="Script" uid="uid://bkwetq2ehx745" path="res://Components/Interactable/interactable.gd" id="1_242fl"]
+[ext_resource type="Texture2D" uid="uid://bjystj7tfof8u" path="res://Assets/Furniture/Window night.png" id="2_242fl"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ycdy4"]
+size = Vector2(8, 16)
+
+[node name="Night Window" type="Node2D" unique_id=409718061]
+script = ExtResource("1_242fl")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=367991666]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=155862668]
+position = Vector2(-2, 0)
+shape = SubResource("RectangleShape2D_ycdy4")
+disabled = true
+
+[node name="Sprite2D" type="Sprite2D" parent="StaticBody2D" unique_id=2117489905]
+position = Vector2(2, -3)
+texture = ExtResource("2_242fl")
