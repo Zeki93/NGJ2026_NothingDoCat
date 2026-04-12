@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://dobyrdxfwbny1" path="res://Assets/Furniture/single Sofa-1.png.png" id="2_3x1k6"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_hca7o"]
-size = Vector2(32, 2.5)
+size = Vector2(24, 2.5)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ycdy4"]
 size = Vector2(23, 2)

@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://ci24hcbl6jmjn" path="res://Assets/Furniture/Coffee table.png" id="2_2q63s"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ycdy4"]
-size = Vector2(23.25, 3)
+size = Vector2(18, 3)
 
 [node name="Coffee Table" type="Node2D" unique_id=1252553829]
 z_index = 1
