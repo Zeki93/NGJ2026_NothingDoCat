@@ -33,7 +33,7 @@
 [ext_resource type="Texture2D" uid="uid://bujuiwvydk36l" path="res://Assets/Ending Scene/Loafa cat-2.png.png" id="31_5ch40"]
 [ext_resource type="Texture2D" uid="uid://ce2217et8mtwh" path="res://Assets/Ending Scene/Loafa cat-3.png.png" id="32_hqbdk"]
 [ext_resource type="Script" uid="uid://68qrgv37qu7j" path="res://Components/Gamestate/GamestateController.gd" id="33_mgie7"]
-[ext_resource type="PackedScene" uid="uid://ds01e4aks4eau" path="res://Components/Audio/MeowAudio.tscn" id="34_nlfrn"]
+[ext_resource type="PackedScene" uid="uid://ds01e4aks4eau" path="res://Components/Audio/Audio.tscn" id="34_nlfrn"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_iykje"]
 texture = ExtResource("1_37kl0")
@@ -2490,6 +2490,4 @@ autoplay = "default"
 [node name="Gamestate" type="Node2D" parent="." unique_id=450020384]
 script = ExtResource("33_mgie7")
 
-[node name="Audio" type="Node2D" parent="." unique_id=270480957]
-
-[node name="Meow" parent="Audio" unique_id=2026710955 instance=ExtResource("34_nlfrn")]
+[node name="Audio" parent="." unique_id=2026710955 instance=ExtResource("34_nlfrn")]

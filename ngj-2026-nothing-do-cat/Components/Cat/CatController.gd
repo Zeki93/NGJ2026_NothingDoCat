@@ -31,6 +31,7 @@ func _physics_process(delta: float) -> void:
 func _input(event):
 	if event.is_action_pressed("jump") && character_body.is_on_floor():
 		character_body.velocity.y = Vector2.UP.y * Globals.tileSize.y * jumpSpeed;
+		GlobalSignalBus.CatJump.emit();
 		pass
 		
 	if event.is_action_pressed("meow"):
