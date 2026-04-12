@@ -1,7 +1,9 @@
 [gd_scene format=3 uid="uid://bvocna8bm8r14"]
 
-[ext_resource type="Script" uid="uid://bl4fqjyanxhb0" path="res://Scenes/start_game_button.gd" id="1_1rerr"]
+[ext_resource type="Script" uid="uid://bl4fqjyanxhb0" path="res://Scenes/menu.gd" id="1_1rerr"]
 [ext_resource type="Texture2D" uid="uid://chsw2dhrt0nxj" path="res://Assets/Wallpaper/Menu.png" id="2_xhh6f"]
+[ext_resource type="Texture2D" uid="uid://cx3o4he7b4xeo" path="res://Assets/Wallpaper/Play (1).png" id="3_cayip"]
+[ext_resource type="Texture2D" uid="uid://d7wfyceve0d6" path="res://Assets/Wallpaper/Quit.png" id="4_158mb"]
 
 [node name="Menu" type="Control" unique_id=2013370792]
 layout_mode = 3
@@ -10,6 +12,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_1rerr")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1820004527]
 
@@ -45,15 +48,19 @@ text = "\"Do Nothing\" - Cat"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="StartGameButton" type="Button" parent="CanvasLayer" unique_id=1056026437]
-z_index = 5
-offset_left = 117.0
-offset_top = 90.0
-offset_right = 171.0
-offset_bottom = 144.0
-size_flags_horizontal = 6
-text = "Start 
-Game"
-script = ExtResource("1_1rerr")
+[node name="Play" type="TextureButton" parent="CanvasLayer" unique_id=1573167124]
+offset_left = 38.0
+offset_top = 95.0
+offset_right = 102.0
+offset_bottom = 159.0
+texture_normal = ExtResource("3_cayip")
 
-[connection signal="pressed" from="CanvasLayer/StartGameButton" to="CanvasLayer/StartGameButton" method="_on_pressed"]
+[node name="Quit" type="TextureButton" parent="CanvasLayer" unique_id=323421272]
+offset_left = 104.0
+offset_top = 95.0
+offset_right = 168.0
+offset_bottom = 159.0
+texture_normal = ExtResource("4_158mb")
+
+[connection signal="pressed" from="CanvasLayer/Play" to="." method="_on_play_button_pressed"]
+[connection signal="pressed" from="CanvasLayer/Quit" to="." method="_on_quit_pressed"]
