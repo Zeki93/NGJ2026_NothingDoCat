@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://dobyrdxfwbny1" path="res://Assets/Furniture/single Sofa-1.png.png" id="2_3x1k6"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_hca7o"]
-size = Vector2(24, 2.5)
+size = Vector2(24, 1.25)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ycdy4"]
 size = Vector2(20, 2)
@@ -28,7 +28,7 @@ texture = ExtResource("2_3x1k6")
 [node name="After" type="StaticBody2D" parent="." unique_id=896703441]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="After" unique_id=472523397]
-position = Vector2(-13, 10)
+position = Vector2(-13, 9.375)
 shape = SubResource("RectangleShape2D_hca7o")
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="After" unique_id=1904671712]
