@@ -3,6 +3,7 @@ extends Node2D
 @onready var emoji_sprite = $CharacterBody2D/Emoji
 @onready var animated_sprite = $CharacterBody2D/AnimatedSprite2D
 @onready var character_body = $CharacterBody2D
+@onready var collision_shape = $CharacterBody2D/CollisionShape2D
 @export var speed = 2;
 @export var jumpSpeed = 7;
 
@@ -45,7 +46,10 @@ func _input(event):
 		if event.is_action_pressed("jump") && character_body.is_on_floor():
 			character_body.velocity.y = Vector2.UP.y * Globals.tileSize.y * jumpSpeed;
 			GlobalSignalBus.CatJump.emit();
+			collision_shape.disabled = true;
 			pass
+		else:
+			collision_shape.disabled = false;
 		
 		if event.is_action_pressed("meow"):
 			CatHelper.meow(emoji_sprite);
