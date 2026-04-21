@@ -10,6 +10,7 @@ size = Vector2(9.5, 10)
 script = ExtResource("1_ncop8")
 
 [node name="Before" type="StaticBody2D" parent="." unique_id=378049264]
+collision_layer = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Before" unique_id=582669044]
 position = Vector2(-0.75, -4)
@@ -22,6 +23,7 @@ texture = ExtResource("2_deepm")
 [node name="After" type="StaticBody2D" parent="." unique_id=1555817963]
 visible = false
 position = Vector2(0, -1)
+collision_layer = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="After" unique_id=352479742]
 position = Vector2(3, -2)

@@ -46,10 +46,12 @@ func _input(event):
 		if event.is_action_pressed("jump") && character_body.is_on_floor():
 			character_body.velocity.y = Vector2.UP.y * Globals.tileSize.y * jumpSpeed;
 			GlobalSignalBus.CatJump.emit();
-			collision_shape.disabled = true;
+			character_body.set_collision_mask_value(2, false);
 			pass
 		else:
-			collision_shape.disabled = false;
+			character_body.set_collision_mask_value(2, true);
+			pass
+			#collision_shape.set_collision_layer_value(1, true)
 		
 		if event.is_action_pressed("meow"):
 			CatHelper.meow(emoji_sprite);

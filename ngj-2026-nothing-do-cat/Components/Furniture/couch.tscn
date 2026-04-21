@@ -13,6 +13,7 @@ size = Vector2(41, 2)
 script = ExtResource("1_fbpu6")
 
 [node name="Before" type="StaticBody2D" parent="." unique_id=1260640608]
+collision_layer = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Before" unique_id=306957236]
 position = Vector2(2, 6)
@@ -28,6 +29,7 @@ texture = ExtResource("2_fbpu6")
 
 [node name="After" type="StaticBody2D" parent="." unique_id=81793167]
 visible = false
+collision_layer = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="After" unique_id=744183908]
 position = Vector2(1.75, 6)

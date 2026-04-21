@@ -12,6 +12,7 @@ catTnteractable = true
 catMeowable = true
 
 [node name="Before" type="StaticBody2D" parent="." unique_id=729166706]
+collision_layer = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Before" unique_id=1584379185]
 position = Vector2(-1.5, 0)
@@ -25,6 +26,7 @@ texture = ExtResource("2_ojdgt")
 visible = false
 position = Vector2(0, 0.99999994)
 rotation = -2.083923
+collision_layer = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="After" unique_id=1755394787]
 position = Vector2(-1.5, 0)

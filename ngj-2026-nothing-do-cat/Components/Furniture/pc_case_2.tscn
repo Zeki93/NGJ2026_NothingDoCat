@@ -12,6 +12,7 @@ z_index = 1
 script = ExtResource("1_4grsk")
 
 [node name="Before" type="StaticBody2D" parent="." unique_id=671475331]
+collision_layer = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Before" unique_id=1544974205]
 position = Vector2(28, 0)
@@ -23,6 +24,7 @@ texture = ExtResource("2_7oily")
 
 [node name="After" type="StaticBody2D" parent="." unique_id=793332908]
 visible = false
+collision_layer = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="After" unique_id=1515478997]
 position = Vector2(27, 0)

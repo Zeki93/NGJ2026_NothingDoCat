@@ -12,4 +12,5 @@ autoplay = true
 autoplay = true
 
 [node name="Angry_AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=109468522]
+volume_db = -5.0
 autoplay = true

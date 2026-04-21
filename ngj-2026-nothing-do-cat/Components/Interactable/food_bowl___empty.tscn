@@ -12,6 +12,7 @@ script = ExtResource("1_ki3a0")
 
 [node name="After" type="StaticBody2D" parent="." unique_id=990698603]
 visible = false
+collision_layer = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="After" unique_id=320513122]
 shape = SubResource("RectangleShape2D_ycdy4")
@@ -21,6 +22,7 @@ disabled = true
 texture = ExtResource("2_ki3a0")
 
 [node name="Before" type="StaticBody2D" parent="." unique_id=1330949799]
+collision_layer = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Before" unique_id=963921602]
 shape = SubResource("RectangleShape2D_ycdy4")

@@ -16,6 +16,7 @@ human_interact_type = 1
 human_reaction_type = 1
 
 [node name="Before" type="StaticBody2D" parent="." unique_id=374341348]
+collision_layer = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Before" unique_id=78435252]
 shape = SubResource("RectangleShape2D_ycdy4")
@@ -29,6 +30,7 @@ texture = ExtResource("2_jdr56")
 visible = false
 position = Vector2(1, 8)
 rotation = -1.3788102
+collision_layer = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="After" unique_id=1137138245]
 shape = SubResource("RectangleShape2D_ycdy4")

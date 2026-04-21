@@ -11,6 +11,7 @@ size = Vector2(19, 28.5)
 script = ExtResource("1_dpwpy")
 
 [node name="Before" type="StaticBody2D" parent="." unique_id=1608839832]
+collision_layer = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Before" unique_id=775338567]
 shape = SubResource("RectangleShape2D_ycdy4")
@@ -23,6 +24,7 @@ texture = ExtResource("2_dpwpy")
 visible = false
 position = Vector2(1, 8)
 rotation = -1.3788102
+collision_layer = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="After" unique_id=778363693]
 shape = SubResource("RectangleShape2D_ycdy4")

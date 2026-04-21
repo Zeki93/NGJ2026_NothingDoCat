@@ -13,6 +13,7 @@ size = Vector2(20, 2)
 script = ExtResource("1_3x1k6")
 
 [node name="Before" type="StaticBody2D" parent="." unique_id=1119043459]
+collision_layer = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Before" unique_id=805564801]
 position = Vector2(-13, 9)
@@ -26,6 +27,7 @@ shape = SubResource("RectangleShape2D_ycdy4")
 texture = ExtResource("2_3x1k6")
 
 [node name="After" type="StaticBody2D" parent="." unique_id=896703441]
+collision_layer = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="After" unique_id=472523397]
 position = Vector2(-13, 9.375)

@@ -1,6 +1,6 @@
-[gd_scene format=3 uid="uid://dls5eya6fh3e7"]
+[gd_scene format=3 uid="uid://ce26vuc64y133"]
 
-[ext_resource type="Script" uid="uid://bkwetq2ehx745" path="res://interactable.gd" id="1_ql87n"]
+[ext_resource type="Script" uid="uid://bkwetq2ehx745" path="res://Components/Interactable/interactable.gd" id="1_ql87n"]
 [ext_resource type="Texture2D" uid="uid://dqj7diar7lb76" path="res://Assets/Furniture/single Window-3.png-1.png-1.png.png" id="2_ql87n"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ycdy4"]
@@ -10,6 +10,7 @@ size = Vector2(8, 16)
 script = ExtResource("1_ql87n")
 
 [node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=1364827153]
+collision_layer = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=2112874247]
 position = Vector2(-2, 0)

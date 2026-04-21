@@ -12,7 +12,6 @@ var endscreen_menu_timer = 0;
 var show_menu_after_seconds = 5;
 var delay = 0.5;
 
-
 func _process(delta: float) -> void:
 	if(Globals.gameEnd):
 		endscreen_menu_timer += delta;
@@ -32,7 +31,6 @@ func check_for_game_end():
 			_open_bedroom_door()
 	if(bedroomDoorOpened):
 		if(Globals.catPosition.x > Globals.screenSize.x * 2):
-			print(Globals.catPosition.x);
 			end_game();
 		
 func end_game():

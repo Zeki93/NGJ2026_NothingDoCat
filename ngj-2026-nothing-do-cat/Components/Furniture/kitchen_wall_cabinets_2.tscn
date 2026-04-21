@@ -10,6 +10,7 @@ size = Vector2(19, 28.5)
 script = ExtResource("1_fe2b6")
 
 [node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=1258114707]
+collision_layer = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=1828544442]
 shape = SubResource("RectangleShape2D_ycdy4")

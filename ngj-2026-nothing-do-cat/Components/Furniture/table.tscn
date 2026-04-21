@@ -13,6 +13,7 @@ catTnteractable = true
 catMeowable = true
 
 [node name="Before" type="StaticBody2D" parent="." unique_id=1647053548]
+collision_layer = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Before" unique_id=1771305292]
 position = Vector2(-0.25, -10.5)
